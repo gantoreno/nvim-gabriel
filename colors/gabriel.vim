@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2022-03-30
+" Last Change: 2022-04-03
 
 hi clear
 
@@ -96,7 +96,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi StatusError ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#b3646e gui=bold
     hi TabLineTitle ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#404040 gui=NONE
     hi TabLineTitleActive ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7fa7c9 gui=bold
-    hi airline_term ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#3a3a3a gui=NONE
     hi CocExplorerGitPathChange ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
     hi CocExplorerGitContentChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
     hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
@@ -192,7 +191,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi StatusError ctermbg=NONE ctermfg=red cterm=bold
     hi TabLineTitle ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi TabLineTitleActive ctermbg=NONE ctermfg=blue cterm=bold
-    hi airline_term ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi CocExplorerGitPathChange ctermbg=NONE ctermfg=green cterm=NONE
     hi CocExplorerGitContentChange ctermbg=NONE ctermfg=yellow cterm=NONE
     hi SignifySignAdd ctermbg=NONE ctermfg=green cterm=NONE
@@ -286,6 +284,7 @@ hi link vimCommand Identifier
 hi link vimFunction Identifier
 hi link gitcommitSummary Normal
 hi link gitcommitOverflow Error
+hi link luaTable Normal
 hi link pythonFunction String
 hi link pythonFunctionCall Normal
 hi link pythonClass String
