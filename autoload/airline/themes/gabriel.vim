@@ -63,7 +63,7 @@ let g:airline#themes#gabriel#palette = {}
 " The dark.vim theme:
 let s:airline_a_normal   = [ '#171717' , '#7ba2c3' , 17  , 190 ]
 let s:airline_b_normal   = [ '#3a3a3a' , '#1b1b1b' , 255 , 238 ]
-let s:airline_c_normal   = [ '#3a3a3a' , '#171717' , 85  , 234 ]
+let s:airline_c_normal   = [ '#3a3a3a' , '#171717' , 255  , 328 ]
 let g:airline#themes#gabriel#palette.normal = airline#themes#generate_color_map(s:airline_a_normal, s:airline_b_normal, s:airline_c_normal)
 let g:airline#themes#gabriel#palette.normal.airline_warning = [ '#171717' , '#bfa86b' , 85  , 234 ]
 let g:airline#themes#gabriel#palette.normal.airline_error = [ '#171717' , '#ac616a' , 85  , 234 ]
@@ -174,9 +174,24 @@ let g:airline#themes#gabriel#palette.accents = {
 
 let g:airline#themes#gabriel#palette.normal.airline_term = s:airline_b_normal
 let g:airline#themes#gabriel#palette.insert.airline_term = s:airline_b_insert
-let g:airline#themes#gabriel#palette.replace.airline_term = s:airline_b_insert
+let g:airline#themes#gabriel#palette.replace.airline_term = s:airline_b_replace
 let g:airline#themes#gabriel#palette.visual.airline_term = s:airline_b_visual
 let g:airline#themes#gabriel#palette.inactive.airline_term = s:airline_b_inactive
+
+let s:saved_theme = []
+
+let g:airline_theme_patch_func = 'AirlineThemePatch'
+
+function! AirlineThemePatch(palette)
+    for colors in values(a:palette)
+        if has_key(colors, 'airline_b') && len(s:saved_theme) ==# 0
+            let s:saved_theme = s:airline_b_normal
+        endif
+        if has_key(colors, 'airline_term')
+            let colors.airline_term = s:saved_theme
+        endif
+    endfor
+endfunction
 
 " Here we define the color map for ctrlp.  We check for the g:loaded_ctrlp
 " variable so that related functionality is loaded if the user is using

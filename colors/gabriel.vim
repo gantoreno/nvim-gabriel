@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2021-12-15
+" Last Change: 2022-03-30
 
 hi clear
 
@@ -29,7 +29,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Underlined ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi StatusLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#3a3a3a gui=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#2b2b2b gui=NONE
-    hi VertSplit ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#0d0d0d gui=NONE
+    hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#171717 gui=NONE
     hi TabLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi TabLineFill ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
@@ -79,6 +79,11 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi VimVar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#e0e0e0 gui=NONE
     hi VimAutoEvent ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7fa7c9 gui=NONE
     hi VimFunction ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
+    hi vimVar ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
+    hi vimMapMod ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7fa7c9 gui=NONE
+    hi vimMapModKey ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7fa7c9 gui=NONE
+    hi vimBracket ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
+    hi vimNotation ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
     hi StatusText ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#e0e0e0 gui=NONE
     hi StatusBackground ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#0d0d0d gui=NONE
     hi StatusFileName ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7fa7c9 gui=bold
@@ -91,9 +96,10 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi StatusError ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#b3646e gui=bold
     hi TabLineTitle ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#404040 gui=NONE
     hi TabLineTitleActive ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7fa7c9 gui=bold
+    hi airline_term ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#3a3a3a gui=NONE
     hi CocExplorerGitPathChange ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
     hi CocExplorerGitContentChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
-    hi SignifySignAdd    ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
+    hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
     hi SignifySignDelete ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
     hi SignifySignChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
@@ -119,7 +125,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Underlined ctermbg=NONE ctermfg=white cterm=NONE
     hi StatusLine ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi VertSplit ctermbg=NONE ctermfg=black cterm=NONE
+    hi VertSplit ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi TabLine ctermbg=NONE ctermfg=white cterm=NONE
     hi TabLineFill ctermbg=NONE ctermfg=white cterm=NONE
     hi TabLineSel ctermbg=NONE ctermfg=white cterm=NONE
@@ -169,6 +175,11 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi VimVar ctermbg=NONE ctermfg=white cterm=NONE
     hi VimAutoEvent ctermbg=NONE ctermfg=blue cterm=NONE
     hi VimFunction ctermbg=NONE ctermfg=magenta cterm=NONE
+    hi vimVar ctermbg=NONE ctermfg=magenta cterm=NONE
+    hi vimMapMod ctermbg=NONE ctermfg=blue cterm=NONE
+    hi vimMapModKey ctermbg=NONE ctermfg=blue cterm=NONE
+    hi vimBracket ctermbg=NONE ctermfg=magenta cterm=NONE
+    hi vimNotation ctermbg=NONE ctermfg=magenta cterm=NONE
     hi StatusText ctermbg=NONE ctermfg=white cterm=NONE
     hi StatusBackground ctermbg=NONE ctermfg=black cterm=NONE
     hi StatusFileName ctermbg=NONE ctermfg=blue cterm=bold
@@ -181,9 +192,10 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi StatusError ctermbg=NONE ctermfg=red cterm=bold
     hi TabLineTitle ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi TabLineTitleActive ctermbg=NONE ctermfg=blue cterm=bold
+    hi airline_term ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi CocExplorerGitPathChange ctermbg=NONE ctermfg=green cterm=NONE
     hi CocExplorerGitContentChange ctermbg=NONE ctermfg=yellow cterm=NONE
-    hi SignifySignAdd    ctermbg=NONE ctermfg=green cterm=NONE
+    hi SignifySignAdd ctermbg=NONE ctermfg=green cterm=NONE
     hi SignifySignDelete ctermbg=NONE ctermfg=red cterm=NONE
     hi SignifySignChange ctermbg=NONE ctermfg=yellow cterm=NONE
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=NONE
@@ -267,6 +279,8 @@ hi link typescriptArrowFuncArg Normal
 hi link typescriptPaymentMethod Constant
 hi link typescriptIdentifierName String
 hi link typescriptVariableDeclaration Constant
+hi link yamlBlockMappingKey String
+hi link yamlBlockCollectionItemStart Normal
 hi link vimOption String
 hi link vimCommand Identifier
 hi link vimFunction Identifier
@@ -289,6 +303,10 @@ hi link TelescopePromptBorder Comment
 hi link TelescopeResultsBorder Comment
 hi link TelescopePreviewBorder Comment
 hi link IndentBlanklineChar Comment
+hi link zshVariableDef Constant
+hi link zshFunction Constant
+hi link zshDeref Constant
+hi link ZshAndZinitFunctions String
 
 let g:terminal_ansi_colors = [ '#1b1b1b', '#ac616a', '#98b386', '#bfa86b', '#7ba2c3', '#999dd4', '#8ac6c7', '#d0d0d0', '#2b2b2b', '#b3646e', '#a0bc8d', '#c9b16f', '#7fa7c9', '#a2a6d4', '#91cecf', '#e0e0e0', ]
 
