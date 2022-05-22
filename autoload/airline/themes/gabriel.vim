@@ -61,9 +61,9 @@ let g:airline#themes#gabriel#palette = {}
 " airline_x/y/z, respectively.
 
 " The dark.vim theme:
-let s:airline_a_normal   = [ '#171717' , '#7ba2c3' , 17  , 190 ]
-let s:airline_b_normal   = [ '#3a3a3a' , '#1b1b1b' , 255 , 238 ]
-let s:airline_c_normal   = [ '#3a3a3a' , '#171717' , 255  , 328 ]
+let s:airline_a_normal   = [ '#171717' , '#7ba2c3' , 17  , 4 ]
+let s:airline_b_normal   = [ '#3a3a3a' , '#1b1b1b' , 0 , 0 ]
+let s:airline_c_normal   = [ '#3a3a3a' , '#171717' , 0  , 328 ]
 let g:airline#themes#gabriel#palette.normal = airline#themes#generate_color_map(s:airline_a_normal, s:airline_b_normal, s:airline_c_normal)
 let g:airline#themes#gabriel#palette.normal.airline_warning = [ '#171717' , '#bfa86b' , 85  , 234 ]
 let g:airline#themes#gabriel#palette.normal.airline_error = [ '#171717' , '#ac616a' , 85  , 234 ]
