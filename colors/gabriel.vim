@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2022-04-03
+" Last Change: 2022-05-07
 
 hi clear
 
@@ -277,6 +277,7 @@ hi link typescriptArrowFuncArg Normal
 hi link typescriptPaymentMethod Constant
 hi link typescriptIdentifierName String
 hi link typescriptVariableDeclaration Constant
+hi link yamlPlainScalar String
 hi link yamlBlockMappingKey String
 hi link yamlBlockCollectionItemStart Normal
 hi link vimOption String
@@ -306,6 +307,14 @@ hi link zshVariableDef Constant
 hi link zshFunction Constant
 hi link zshDeref Constant
 hi link ZshAndZinitFunctions String
+hi link rubyModuleName String
+hi link rubyClassName String
+hi link rubyMethodName Constant
+hi link rubyStringDelimiter String
+hi link rubyRegexp String
+hi link rubyConstant Constant
+hi link rubyInstanceVariable Normal
+hi link rubySharpBang Comment
 
 let g:terminal_ansi_colors = [ '#1b1b1b', '#ac616a', '#98b386', '#bfa86b', '#7ba2c3', '#999dd4', '#8ac6c7', '#d0d0d0', '#2b2b2b', '#b3646e', '#a0bc8d', '#c9b16f', '#7fa7c9', '#a2a6d4', '#91cecf', '#e0e0e0', ]
 
