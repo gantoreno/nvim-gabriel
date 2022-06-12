@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2022-05-07
+" Last Change: 2022-06-12
 
 hi clear
 
@@ -29,7 +29,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Underlined ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi StatusLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#3a3a3a gui=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#2b2b2b gui=NONE
-    hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#171717 gui=NONE
+    hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#202020 gui=NONE
     hi TabLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi TabLineFill ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
