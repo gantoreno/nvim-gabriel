@@ -13,97 +13,97 @@ endif
 let colors_name = "gabriel"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#d0d0d0 gui=NONE
+    hi Normal ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
     hi NonText ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi Comment ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#505050 gui=NONE
-    hi Constant ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
-    hi Error ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
-    hi Identifier ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
+    hi Constant ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#999dd4 gui=NONE
+    hi Error ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#ac616a gui=NONE
+    hi Identifier ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#ac616a gui=NONE
     hi Ignore ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
-    hi PreProc ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
-    hi Special ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi Statement ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
-    hi String ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7fa7c9 gui=NONE
-    hi Todo ctermbg=NONE ctermfg=15 cterm=bold guibg=NONE guifg=#d0d0d0 gui=bold
-    hi Type ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
-    hi Underlined ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
+    hi PreProc ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#ac616a gui=NONE
+    hi Special ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Statement ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#ac616a gui=NONE
+    hi String ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7ba2c3 gui=NONE
+    hi Todo ctermbg=NONE ctermfg=15 cterm=bold guibg=NONE guifg=#ffffff gui=bold
+    hi Type ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#ac616a gui=NONE
+    hi Underlined ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi StatusLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#505050 gui=NONE
     hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#222222 gui=NONE
-    hi TabLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi TabLineFill ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi Title ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
+    hi TabLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi TabLineFill ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Title ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi CursorLine ctermbg=8 ctermfg=NONE cterm=NONE guibg=#202020 guifg=NONE gui=NONE
     hi LineNr ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#777777 gui=NONE
     hi CursorLineNr ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
-    hi helpLeadBlank ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi helpNormal ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
+    hi helpLeadBlank ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi helpNormal ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi Visual ctermbg=8 ctermfg=NONE cterm=NONE guibg=#202020 guifg=NONE gui=NONE
     hi VisualNOS ctermbg=8 ctermfg=NONE cterm=NONE guibg=#202020 guifg=NONE gui=NONE
     hi Pmenu ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
-    hi PmenuSbar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi PmenuSel ctermbg=8 ctermfg=15 cterm=NONE guibg=#202020 guifg=#d0d0d0 gui=NONE
-    hi PmenuThumb ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi FoldColumn ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi Folded ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi WildMenu ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi SpecialKey ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi DiffAdd ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi DiffChange ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi DiffDelete ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi DiffText ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
+    hi PmenuSbar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi PmenuSel ctermbg=8 ctermfg=15 cterm=NONE guibg=#202020 guifg=#ffffff gui=NONE
+    hi PmenuThumb ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi FoldColumn ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Folded ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi WildMenu ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi SpecialKey ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi DiffAdd ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi DiffChange ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi DiffDelete ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi DiffText ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi IncSearch ctermbg=8 ctermfg=NONE cterm=NONE guibg=#222222 guifg=NONE gui=NONE
-    hi Search ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
+    hi Search ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi Directory ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
-    hi MatchParen ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi SpellBad ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE guisp=#b3646e
-    hi SpellCap ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE guisp=#7fa7c9
-    hi SpellLocal ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE guisp=#a2a6d4
-    hi SpellRare ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE guisp=#91cecf
-    hi ColorColumn ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi SignColumn ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi ErrorMsg ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi ModeMsg ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi MoreMsg ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi Question ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi Cursor ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi CursorColumn ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi QuickFixLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi Conceal ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi ToolbarLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi ToolbarButton ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi debugPC ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi debugBreakpoint ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi VimHiGroup ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7fa7c9 gui=NONE
-    hi VimVar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#e0e0e0 gui=NONE
-    hi VimAutoEvent ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7fa7c9 gui=NONE
-    hi VimFunction ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
-    hi vimVar ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
-    hi vimMapMod ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7fa7c9 gui=NONE
-    hi vimMapModKey ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7fa7c9 gui=NONE
-    hi vimBracket ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
-    hi vimNotation ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
-    hi StatusText ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#e0e0e0 gui=NONE
+    hi MatchParen ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi SpellBad ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE guisp=#ac616a
+    hi SpellCap ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE guisp=#7ba2c3
+    hi SpellLocal ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE guisp=#999dd4
+    hi SpellRare ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE guisp=#8ac6c7
+    hi ColorColumn ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi SignColumn ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi ErrorMsg ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi ModeMsg ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi MoreMsg ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Question ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Cursor ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi CursorColumn ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi QuickFixLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Conceal ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi ToolbarLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi ToolbarButton ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi debugPC ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi debugBreakpoint ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi VimHiGroup ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7ba2c3 gui=NONE
+    hi VimVar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi VimAutoEvent ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7ba2c3 gui=NONE
+    hi VimFunction ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#999dd4 gui=NONE
+    hi vimVar ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#999dd4 gui=NONE
+    hi vimMapMod ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7ba2c3 gui=NONE
+    hi vimMapModKey ctermbg=NONE ctermfg=12 cterm=NONE guibg=NONE guifg=#7ba2c3 gui=NONE
+    hi vimBracket ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#999dd4 gui=NONE
+    hi vimNotation ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#999dd4 gui=NONE
+    hi StatusText ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi StatusBackground ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
-    hi StatusFileName ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7fa7c9 gui=bold
-    hi StatusFileType ctermbg=NONE ctermfg=10 cterm=bold guibg=NONE guifg=#a0bc8d gui=bold
-    hi StatusFileModified ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#c9b16f gui=bold
-    hi StatusFileReadonly ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#c9b16f gui=bold
-    hi StatusFileLocation ctermbg=NONE ctermfg=13 cterm=bold guibg=NONE guifg=#a2a6d4 gui=bold
-    hi StatusFileEncoding ctermbg=NONE ctermfg=14 cterm=bold guibg=NONE guifg=#91cecf gui=bold
-    hi StatusWarning ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#c9b16f gui=bold
-    hi StatusError ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#b3646e gui=bold
+    hi StatusFileName ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7ba2c3 gui=bold
+    hi StatusFileType ctermbg=NONE ctermfg=10 cterm=bold guibg=NONE guifg=#98b386 gui=bold
+    hi StatusFileModified ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#bfa86b gui=bold
+    hi StatusFileReadonly ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#bfa86b gui=bold
+    hi StatusFileLocation ctermbg=NONE ctermfg=13 cterm=bold guibg=NONE guifg=#999dd4 gui=bold
+    hi StatusFileEncoding ctermbg=NONE ctermfg=14 cterm=bold guibg=NONE guifg=#8ac6c7 gui=bold
+    hi StatusWarning ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#bfa86b gui=bold
+    hi StatusError ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#ac616a gui=bold
     hi TabLineTitle ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
-    hi TabLineTitleActive ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7fa7c9 gui=bold
-    hi CocExplorerGitPathChange ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
-    hi CocExplorerGitContentChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
-    hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
-    hi SignifySignDelete ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
-    hi SignifySignChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
-    hi CocErrorSign ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
-    hi CocInfoSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
-    hi CocWarningSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
+    hi TabLineTitleActive ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7ba2c3 gui=bold
+    hi CocExplorerGitPathChange ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#98b386 gui=NONE
+    hi CocExplorerGitContentChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#bfa86b gui=NONE
+    hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#98b386 gui=NONE
+    hi SignifySignDelete ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#ac616a gui=NONE
+    hi SignifySignChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#bfa86b gui=NONE
+    hi CocErrorSign ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#ac616a gui=NONE
+    hi CocInfoSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#bfa86b gui=NONE
+    hi CocWarningSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#bfa86b gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -316,6 +316,6 @@ hi link rubyConstant Constant
 hi link rubyInstanceVariable Normal
 hi link rubySharpBang Comment
 
-let g:terminal_ansi_colors = [ '#1b1b1b', '#ac616a', '#98b386', '#bfa86b', '#7ba2c3', '#999dd4', '#8ac6c7', '#d0d0d0', '#2b2b2b', '#b3646e', '#a0bc8d', '#c9b16f', '#7fa7c9', '#a2a6d4', '#91cecf', '#e0e0e0', ]
+let g:terminal_ansi_colors = [ '#222222', '#ac616a', '#98b386', '#bfa86b', '#7ba2c3', '#999dd4', '#8ac6c7', '#dddddd', '#666666', '#ac616a', '#98b386', '#bfa86b', '#7ba2c3', '#999dd4', '#8ac6c7', '#ffffff', ]
 
 " Generated with RNB (https://github.com/romainl/vim-rnb)
