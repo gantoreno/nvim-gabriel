@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2022-06-20
+" Last Change: 2022-08-07
 
 hi clear
 
@@ -13,13 +13,13 @@ endif
 let colors_name = "gabriel"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=0 ctermfg=15 cterm=NONE guibg=#0d0d0d guifg=#d0d0d0 gui=NONE
-    hi NonText ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#0d0d0d gui=NONE
+    hi Normal ctermbg=0 ctermfg=15 cterm=NONE guibg=#000000 guifg=#d0d0d0 gui=NONE
+    hi NonText ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi Comment ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#505050 gui=NONE
     hi Constant ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
     hi Error ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
     hi Identifier ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
-    hi Ignore ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
+    hi Ignore ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
     hi PreProc ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
     hi Special ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi Statement ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
@@ -29,19 +29,19 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Underlined ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi StatusLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#505050 gui=NONE
-    hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#272727 gui=NONE
+    hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#222222 gui=NONE
     hi TabLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi TabLineFill ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi Title ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi CursorLine ctermbg=8 ctermfg=NONE cterm=NONE guibg=#202020 guifg=NONE gui=NONE
-    hi LineNr ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#505050 gui=NONE
-    hi CursorLineNr ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
+    hi LineNr ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#777777 gui=NONE
+    hi CursorLineNr ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
     hi helpLeadBlank ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi helpNormal ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi Visual ctermbg=8 ctermfg=NONE cterm=NONE guibg=#202020 guifg=NONE gui=NONE
     hi VisualNOS ctermbg=8 ctermfg=NONE cterm=NONE guibg=#202020 guifg=NONE gui=NONE
-    hi Pmenu ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
+    hi Pmenu ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
     hi PmenuSbar ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi PmenuSel ctermbg=8 ctermfg=15 cterm=NONE guibg=#202020 guifg=#d0d0d0 gui=NONE
     hi PmenuThumb ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
@@ -53,9 +53,9 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi DiffChange ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi DiffDelete ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi DiffText ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi IncSearch ctermbg=8 ctermfg=NONE cterm=NONE guibg=#272727 guifg=NONE gui=NONE
+    hi IncSearch ctermbg=8 ctermfg=NONE cterm=NONE guibg=#222222 guifg=NONE gui=NONE
     hi Search ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
-    hi Directory ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
+    hi Directory ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
     hi MatchParen ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi SpellBad ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE guisp=#b3646e
     hi SpellCap ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE guisp=#7fa7c9
@@ -85,7 +85,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi vimBracket ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
     hi vimNotation ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#a2a6d4 gui=NONE
     hi StatusText ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#e0e0e0 gui=NONE
-    hi StatusBackground ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#0d0d0d gui=NONE
+    hi StatusBackground ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi StatusFileName ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7fa7c9 gui=bold
     hi StatusFileType ctermbg=NONE ctermfg=10 cterm=bold guibg=NONE guifg=#a0bc8d gui=bold
     hi StatusFileModified ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#c9b16f gui=bold
@@ -94,7 +94,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi StatusFileEncoding ctermbg=NONE ctermfg=14 cterm=bold guibg=NONE guifg=#91cecf gui=bold
     hi StatusWarning ctermbg=NONE ctermfg=11 cterm=bold guibg=NONE guifg=#c9b16f gui=bold
     hi StatusError ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#b3646e gui=bold
-    hi TabLineTitle ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
+    hi TabLineTitle ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
     hi TabLineTitleActive ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#7fa7c9 gui=bold
     hi CocExplorerGitPathChange ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#a0bc8d gui=NONE
     hi CocExplorerGitContentChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
