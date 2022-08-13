@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2022-08-07
+" Last Change: 2022-08-12
 
 hi clear
 
@@ -104,6 +104,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CocErrorSign ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#ac616a gui=NONE
     hi CocInfoSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#bfa86b gui=NONE
     hi CocWarningSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#bfa86b gui=NONE
+    hi IndentBlanklineChar ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#2d2d2d gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -199,6 +200,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=NONE
     hi CocInfoSign ctermbg=NONE ctermfg=yellow cterm=NONE
     hi CocWarningSign ctermbg=NONE ctermfg=yellow cterm=NONE
+    hi IndentBlanklineChar ctermbg=NONE ctermfg=darkgray cterm=NONE
 endif
 
 hi link EndOfBuffer NonText
@@ -302,7 +304,6 @@ hi link TelescopeBorder VertSplit
 hi link TelescopePromptBorder VertSplit
 hi link TelescopeResultsBorder VertSplit
 hi link TelescopePreviewBorder VertSplit
-hi link IndentBlanklineChar Comment
 hi link zshVariableDef Constant
 hi link zshFunction Constant
 hi link zshDeref Constant
