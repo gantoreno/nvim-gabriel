@@ -297,7 +297,7 @@ hi link pythonDottedName Constant
 hi link pythonBuiltinType String
 hi link pythonBuiltinFunc String
 hi link pythonStrFormat Constant
-hi link CocExplorerFileRootName Ignore
+hi link CocExplorerFileRootName String
 hi link CocExplorerFileFullpath Ignore
 hi link CocExplorerFileFilename Ignore
 hi link TelescopeBorder VertSplit
