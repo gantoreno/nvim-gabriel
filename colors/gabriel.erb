@@ -61,36 +61,35 @@
     #
     # If your colors are defined correctly, the resulting colorscheme is guaranteed
     # to work in GVim (Windows/Linux), MacVim (MacOS), and any properly set up terminal emulator.
-    black       = ["#222222", 0, "black"]
+    black       = ["#1b1b1b", 0, "black"]
     darkred     = ["#ac616a", 1, "darkred"]
     darkgreen   = ["#98b386", 2, "darkgreen"]
     darkyellow  = ["#bfa86b", 3, "darkyellow"]
     darkblue    = ["#7ba2c3", 4, "darkblue"]
     darkmagenta = ["#999dd4", 5, "darkmagenta"]
     darkcyan    = ["#8ac6c7", 6, "darkcyan"]
-    gray        = ["#dddddd", 7, "gray"]
-    darkgray    = ["#666666", 8, "darkgray"]
-    red         = ["#ac616a", 9, "red"]
-    green       = ["#98b386", 10, "green"]
-    yellow      = ["#bfa86b", 11, "yellow"]
-    blue        = ["#7ba2c3", 12, "blue"]
-    magenta     = ["#999dd4", 13, "magenta"]
-    cyan        = ["#8ac6c7", 14, "cyan"]
-    white       = ["#ffffff", 15, "white"]
+    gray        = ["#d0d0d0", 7, "gray"]
+    darkgray    = ["#2b2b2b", 8, "darkgray"]
+    red         = ["#b3646e", 9, "red"]
+    green       = ["#a0bc8d", 10, "green"]
+    yellow      = ["#c9b16f", 11, "yellow"]
+    blue        = ["#7fa7c9", 12, "blue"]
+    magenta     = ["#a2a6d4", 13, "magenta"]
+    cyan        = ["#91cecf", 14, "cyan"]
+    white       = ["#e0e0e0", 15, "white"]
 
-    background  = ["#000000", 0, "black"]
-    foreground  = ["#ffffff", 15, "white"]
+    background  = ["#0d0d0d", 0, "black"]
+    foreground  = ["#d0d0d0", 15, "white"]
 
     gray0 = ["#101010", 8, "darkgray"]
     gray1 = ["#131313", 8, "darkgray"]
     gray2 = ["#202020", 8, "darkgray"]
     gray3 = ["#1b1b1b", 8, "darkgray"]
-    gray4 = ["#222222", 8, "darkgray"]
+    gray4 = ["#272727", 8, "darkgray"]
     gray5 = ["#505050", 8, "darkgray"]
-    gray6 = ["#777777", 8, "darkgray"]
-    gray7 = ["#dddddd", 8, "darkgray"]
-    gray8 = ["#dddddd", 8, "darkgray"]
-    gray9 = ["#2d2d2d", 8, "darkgray"]
+    gray6 = ["#505050", 8, "darkgray"]
+    gray7 = ["#808080", 8, "darkgray"]
+    gray8 = ["#808080", 8, "darkgray"]
 
     # Step 4: highlights
     #
@@ -335,7 +334,7 @@
         [ "pythonStrFormat", "Constant" ],
 
         # CoC
-        [ "CocExplorerFileRootName", "String" ],
+        [ "CocExplorerFileRootName", "Ignore" ],
         [ "CocExplorerFileFullpath", "Ignore" ],
         [ "CocExplorerFileFilename", "Ignore" ],
         [ "CocExplorerGitPathChange", "NONE", green, "NONE" ],
@@ -358,7 +357,7 @@
         [ "TelescopePreviewBorder", "VertSplit" ],
 
         # IndentBlankline
-        [ "IndentBlanklineChar", "NONE", gray9, "NONE"],
+        [ "IndentBlanklineChar", "Comment" ],
 
         # ZSH
         [ "zshVariableDef", "Constant" ],
