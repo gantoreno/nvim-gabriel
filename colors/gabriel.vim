@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2022-08-12
+" Last Change: 2022-09-17
 
 hi clear
 
@@ -29,7 +29,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Underlined ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi StatusLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#808080 gui=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#505050 gui=NONE
-    hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#272727 gui=NONE
+    hi VertSplit ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#0d0d0d gui=NONE
     hi TabLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi TabLineFill ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
     hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#d0d0d0 gui=NONE
@@ -124,7 +124,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Underlined ctermbg=NONE ctermfg=white cterm=NONE
     hi StatusLine ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi VertSplit ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi VertSplit ctermbg=NONE ctermfg=black cterm=NONE
     hi TabLine ctermbg=NONE ctermfg=white cterm=NONE
     hi TabLineFill ctermbg=NONE ctermfg=white cterm=NONE
     hi TabLineSel ctermbg=NONE ctermfg=white cterm=NONE
