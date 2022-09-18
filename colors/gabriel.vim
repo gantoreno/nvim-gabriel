@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2022-09-17
+" Last Change: 2022-09-18
 
 hi clear
 
@@ -104,6 +104,11 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CocErrorSign ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#b3646e gui=NONE
     hi CocInfoSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
     hi CocWarningSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#c9b16f gui=NONE
+    hi TelescopeBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#272727 gui=NONE
+    hi TelescopePromptBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#272727 gui=NONE
+    hi TelescopeResultsBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#272727 gui=NONE
+    hi TelescopePreviewBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#272727 gui=NONE
+    hi IndentBlanklineChar ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#2d2d2d gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -199,6 +204,11 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=NONE
     hi CocInfoSign ctermbg=NONE ctermfg=yellow cterm=NONE
     hi CocWarningSign ctermbg=NONE ctermfg=yellow cterm=NONE
+    hi TelescopeBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi TelescopePromptBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi TelescopeResultsBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi TelescopePreviewBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi IndentBlanklineChar ctermbg=NONE ctermfg=darkgray cterm=NONE
 endif
 
 hi link EndOfBuffer NonText
@@ -298,11 +308,6 @@ hi link pythonStrFormat Constant
 hi link CocExplorerFileRootName Ignore
 hi link CocExplorerFileFullpath Ignore
 hi link CocExplorerFileFilename Ignore
-hi link TelescopeBorder VertSplit
-hi link TelescopePromptBorder VertSplit
-hi link TelescopeResultsBorder VertSplit
-hi link TelescopePreviewBorder VertSplit
-hi link IndentBlanklineChar Comment
 hi link zshVariableDef Constant
 hi link zshFunction Constant
 hi link zshDeref Constant

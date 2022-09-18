@@ -90,6 +90,7 @@
     gray6 = ["#505050", 8, "darkgray"]
     gray7 = ["#808080", 8, "darkgray"]
     gray8 = ["#808080", 8, "darkgray"]
+    gray9 = ["#2d2d2d", 8, "darkgray"]
 
     # Step 4: highlights
     #
@@ -351,13 +352,13 @@
         [ "CocWarningSign", "NONE", yellow, "NONE" ],
 
         # Telescope
-        [ "TelescopeBorder", "VertSplit" ],
-        [ "TelescopePromptBorder", "VertSplit" ],
-        [ "TelescopeResultsBorder", "VertSplit" ],
-        [ "TelescopePreviewBorder", "VertSplit" ],
+        [ "TelescopeBorder", "NONE", gray4, "NONE" ],
+        [ "TelescopePromptBorder",  "NONE", gray4, "NONE" ],
+        [ "TelescopeResultsBorder", "NONE", gray4, "NONE" ],
+        [ "TelescopePreviewBorder", "NONE", gray4, "NONE" ],
 
         # IndentBlankline
-        [ "IndentBlanklineChar", "Comment" ],
+        [ "IndentBlanklineChar", "NONE", gray9, "NONE" ],
 
         # ZSH
         [ "zshVariableDef", "Constant" ],
