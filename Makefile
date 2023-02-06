@@ -16,4 +16,4 @@ all: $(VIM_OUTPUTS)
 	erb -T - $< > $@
 
 watch:
-	when-changed colors/gabriel-dark.erb -c make
+	when-changed colors/*.erb -c make*
