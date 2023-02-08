@@ -18,7 +18,8 @@ Gabriel's (me) personal Vim & Neovim colorscheme.
 Set the colorscheme inside `.vimrc` or `init.vim`:
 
 ```vim
-colorscheme gabriel
+colorscheme gabriel-light " for light mode
+colorscheme gabriel-dark " for dark mode
 ```
 
 On terminal emulators, make sure to set Vim to use `truecolor` in order for Gabriel to work as expected:
