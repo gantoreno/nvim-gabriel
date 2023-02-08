@@ -9,7 +9,8 @@
 Gabriel's (me) personal Vim & Neovim colorscheme.
 
 <div align="center">
-  <img src=".github/screenshot.png" />
+  <img src=".github/gabriel-light.png#gh-light-mode-only" />
+  <img src=".github/gabriel-dark.png#gh-dark-mode-only" />
 </div>
 
 ## Usage
@@ -37,44 +38,16 @@ $ make watch # To get hot reload, just make sure to pip install when-changed
 
 This are the languages I've already implemented proper highlighting for:
 
--   JavaScript
--   JavaScript React (JSX)
-    -   TypeScript
-    -   TypeScriptReact (TSX)
--   Python
--   VimScript
--   HTML
--   JSON
+- JavaScript
+- JavaScript React (JSX)
+  - TypeScript
+  - TypeScriptReact (TSX)
+- Python
+- VimScript
+- HTML
+- JSON
 
 There are more languages coming in soon (see [Contributing](https://github.com/gantoreno/vim-gabriel#contributing)).
-
-## Airline
-
-Gabriel also includes an [Airline](https://github.com/vim-airline/vim-airline) theme, make sure to set `g:airline_theme` to `gabriel` in your config file.
-
-![Normal mode](.github/normal.png)
-![Insert mode](.github/insert.png)
-![Visual mode](.github/visual.png)
-![Replace mode](.github/replace.png)
-
-## Terminal
-
-If you want other terminal output to match with Gabriel, then set your terminal emulator’s colors to match the ones below:
-
-| Color      | Normal    | Bright    |
-| ---------- | --------- | --------- |
-| Black      | `#1b1b1b` | `#2b2b2b` |
-| Red        | `#ac616a` | `#b3646e` |
-| Green      | `#98b386` | `#a0bc8d` |
-| Yellow     | `#bfa86b` | `#c9b16f` |
-| Blue       | `#7ba2c3` | `#7fa7c9` |
-| Magenta    | `#999dd4` | `#a2a6d4` |
-| Cyan       | `#8ac6c7` | `#91cecf` |
-| White      | `#d0d0d0` | `#e0e0e0` |
-| Foreground | `#d0d0d0` |           |
-| Background | `#0d0d0d` |           |
-
-There's an included [iTerm2](https://iterm2.com/) colorscheme inside `schemes`, double-click it and it sould automatically be imported, search for the `Gabriel` colorscheme.
 
 ## Contributing
 
