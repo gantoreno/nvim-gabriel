@@ -62,20 +62,20 @@
     # If your colors are defined correctly, the resulting colorscheme is guaranteed
     # to work in GVim (Windows/Linux), MacVim (MacOS), and any properly set up terminal emulator.
     black       = ["#000000", 0, "black"]
-    darkred     = ["#884444", 1, "darkred"]
-    darkgreen   = ["#779966", 2, "darkgreen"]
-    darkyellow  = ["#AA8844", 3, "darkyellow"]
-    darkblue    = ["#447799", 4, "darkblue"]
-    darkmagenta = ["#666699", 5, "darkmagenta"]
-    darkcyan    = ["#449999", 6, "darkcyan"]
+    darkred     = ["#aa6666", 1, "darkred"]
+    darkgreen   = ["#99bb88", 2, "darkgreen"]
+    darkyellow  = ["#ccaa66", 3, "darkyellow"]
+    darkblue    = ["#6699bb", 4, "darkblue"]
+    darkmagenta = ["#8888bb", 5, "darkmagenta"]
+    darkcyan    = ["#66bbbb", 6, "darkcyan"]
     gray        = ["#cccccc", 7, "gray"]
     darkgray    = ["#444444", 8, "darkgray"]
-    red         = ["#884444", 9, "red"]
-    green       = ["#779966", 10, "green"]
-    yellow      = ["#AA8844", 11, "yellow"]
-    blue        = ["#447799", 12, "blue"]
-    magenta     = ["#666699", 13, "magenta"]
-    cyan        = ["#449999", 14, "cyan"]
+    red         = ["#aa6666", 9, "red"]
+    green       = ["#99bb88", 10, "green"]
+    yellow      = ["#ccaa66", 11, "yellow"]
+    blue        = ["#6699bb", 12, "blue"]
+    magenta     = ["#8888bb", 13, "magenta"]
+    cyan        = ["#66bbbb", 14, "cyan"]
     white       = ["#ffffff", 15, "white"]
 
     background  = ["#111111", 0, "black"]
@@ -139,11 +139,11 @@
         [ "Normal", "NONE" ],
         [ "NonText", "NONE", background, "NONE" ],
         [ "EndOfBuffer","NonText" ],
-        [ "Comment", "NONE", gray8, "NONE" ],
+        [ "Comment", "NONE", gray9, "NONE" ],
         [ "Constant", "NONE", magenta, "NONE" ],
         [ "Error", "NONE", red, "NONE" ],
         [ "Identifier", "NONE", red, "NONE" ],
-        [ "Ignore", "NONE", gray8, "NONE" ],
+        [ "Ignore", "NONE", gray9, "NONE" ],
         [ "PreProc", "NONE", red, "NONE" ],
         [ "Special", "NONE", foreground, "NONE" ],
         [ "Statement", "NONE", red, "NONE" ],
@@ -152,8 +152,8 @@
         [ "Todo", "NONE", foreground, "bold" ],
         [ "Type", "NONE", red, "NONE" ],
         [ "Underlined", "NONE", foreground, "NONE" ],
-        [ "StatusLine", "NONE", gray7, "NONE" ],
-        [ "StatusLineNC", "NONE", gray8, "NONE" ],
+        [ "StatusLine", "NONE", gray11, "NONE" ],
+        [ "StatusLineNC", "NONE", gray9, "NONE" ],
         [ "StatusLineTerm", "StatusLine" ],
         [ "StatusLineTermNC", "StatusLineNC" ],
         [ "VertSplit", "NONE", background, "NONE" ],
@@ -162,13 +162,13 @@
         [ "TabLineSel", "NONE", foreground, "NONE" ],
         [ "Title", "NONE", foreground, "NONE" ],
         [ "CursorLine", gray2, "NONE", "NONE" ],
-        [ "LineNr", "NONE", gray7, "NONE" ],
-        [ "CursorLineNr", "NONE", gray8, "NONE" ],
+        [ "LineNr", "NONE", gray9, "NONE" ],
+        [ "CursorLineNr", "NONE", gray11, "NONE" ],
         [ "helpLeadBlank", "NONE", foreground, "NONE" ],
         [ "helpNormal", "NONE", foreground, "NONE" ],
         [ "Visual", gray2, "NONE", "NONE" ],
         [ "VisualNOS", gray2, "NONE", "NONE" ],
-        [ "Pmenu", "NONE", gray8, "NONE" ],
+        [ "Pmenu", "NONE", gray9, "NONE" ],
         [ "PmenuSbar", "NONE", foreground, "NONE" ],
         [ "PmenuSel", gray2, foreground, "NONE" ],
         [ "PmenuThumb", "NONE", foreground, "NONE" ],
@@ -182,7 +182,7 @@
         [ "DiffText", "NONE", foreground, "NONE" ],
         [ "IncSearch", gray4, "NONE", "NONE" ],
         [ "Search", "NONE", foreground, "NONE" ],
-        [ "Directory", "NONE", gray8, "NONE" ],
+        [ "Directory", "NONE", gray11, "NONE" ],
         [ "MatchParen", "NONE", foreground, "NONE" ],
         [ "SpellBad", "NONE", foreground, "NONE", red ],
         [ "SpellCap", "NONE", foreground, "NONE", blue ],
@@ -224,7 +224,7 @@
         [ "StatusFileEncoding", "NONE", cyan, "bold" ],
         [ "StatusWarning", "NONE", yellow, "bold" ],
         [ "StatusError", "NONE", red, "bold" ],
-        [ "TabLineTitle", "NONE", gray8, "NONE" ],
+        [ "TabLineTitle", "NONE", gray9, "NONE" ],
         [ "TabLineTitleActive", "NONE", blue, "bold" ],
 
         # Custom Groups
@@ -341,9 +341,9 @@
         [ "pythonStrFormat", "Constant" ],
 
         # CoC
-        [ "CocExplorerFileRootName", "Ignore" ],
-        [ "CocExplorerFileFullpath", "Ignore" ],
-        [ "CocExplorerFileFilename", "Ignore" ],
+        [ "CocExplorerFileRootName", "Directory" ],
+        [ "CocExplorerFileFullpath", "Directory" ],
+        [ "CocExplorerFileFilename", "Directory" ],
         [ "CocExplorerGitPathChange", "NONE", green, "NONE" ],
         [ "CocExplorerGitContentChange", "NONE", yellow, "NONE" ],
 
@@ -358,10 +358,10 @@
         [ "CocWarningSign", "NONE", yellow, "NONE" ],
 
         # Telescope
-        [ "TelescopeBorder", "NONE", gray4, "NONE" ],
-        [ "TelescopePromptBorder",  "NONE", gray4, "NONE" ],
-        [ "TelescopeResultsBorder", "NONE", gray4, "NONE" ],
-        [ "TelescopePreviewBorder", "NONE", gray4, "NONE" ],
+        [ "TelescopeBorder", "NONE", gray11, "NONE" ],
+        [ "TelescopePromptBorder",  "NONE", gray11, "NONE" ],
+        [ "TelescopeResultsBorder", "NONE", gray11, "NONE" ],
+        [ "TelescopePreviewBorder", "NONE", gray11, "NONE" ],
 
         # IndentBlankline
         [ "IndentBlanklineChar", "NONE", gray9, "NONE" ],
