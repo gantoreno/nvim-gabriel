@@ -320,6 +320,7 @@ hi link rubyConstant Constant
 hi link rubyInstanceVariable Normal
 hi link rubySharpBang Comment
 hi link NvimTreeFolderIcon Directory
+hi link NvimTreeIndentMarker Directory
 
 let g:terminal_ansi_colors = [ '#000000', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#CCCCCC', '#444444', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#FFFFFF', ]
 
