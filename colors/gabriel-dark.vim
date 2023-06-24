@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2023-06-21
+" Last Change: 2023-06-24
 
 hi clear
 
@@ -319,6 +319,7 @@ hi link rubyRegexp String
 hi link rubyConstant Constant
 hi link rubyInstanceVariable Normal
 hi link rubySharpBang Comment
+hi link NvimTreeFolderIcon Directory
 
 let g:terminal_ansi_colors = [ '#000000', '#aa6666', '#99bb88', '#ccaa66', '#6699bb', '#8888bb', '#66bbbb', '#cccccc', '#444444', '#aa6666', '#99bb88', '#ccaa66', '#6699bb', '#8888bb', '#66bbbb', '#ffffff', ]
 
