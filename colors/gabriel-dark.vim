@@ -29,7 +29,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi StatusLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#bbbbbb gui=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi VertSplit ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#111111 gui=NONE
-    hi TabLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi TabLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#bbbbbb gui=NONE
     hi TabLineFill ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi Title ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
@@ -143,7 +143,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi StatusLine ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi VertSplit ctermbg=NONE ctermfg=black cterm=NONE
-    hi TabLine ctermbg=NONE ctermfg=white cterm=NONE
+    hi TabLine ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi TabLineFill ctermbg=NONE ctermfg=white cterm=NONE
     hi TabLineSel ctermbg=NONE ctermfg=white cterm=NONE
     hi Title ctermbg=NONE ctermfg=white cterm=NONE
