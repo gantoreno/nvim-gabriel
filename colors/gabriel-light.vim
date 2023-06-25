@@ -112,6 +112,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi @punctuation.bracket ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @tag.delimiter ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @text.emphasis ctermbg=NONE ctermfg=15 cterm=italic guibg=NONE guifg=#000000 gui=italic
+    hi @text.literal ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#884444 gui=NONE
     hi @text.reference ctermbg=NONE ctermfg=12 cterm=underline guibg=NONE guifg=#447799 gui=underline
     hi @text.strong ctermbg=NONE ctermfg=15 cterm=bold guibg=NONE guifg=#000000 gui=bold
     hi @text.title.1 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
@@ -224,6 +225,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi @punctuation.bracket ctermbg=NONE ctermfg=white cterm=NONE
     hi @tag.delimiter ctermbg=NONE ctermfg=white cterm=NONE
     hi @text.emphasis ctermbg=NONE ctermfg=white cterm=italic
+    hi @text.literal ctermbg=NONE ctermfg=red cterm=NONE
     hi @text.reference ctermbg=NONE ctermfg=blue cterm=underline
     hi @text.strong ctermbg=NONE ctermfg=white cterm=bold
     hi @text.title.1 ctermbg=NONE ctermfg=blue cterm=bold
