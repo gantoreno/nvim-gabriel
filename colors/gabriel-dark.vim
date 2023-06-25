@@ -333,7 +333,7 @@ hi link NvimTreeRootFolder Directory
 hi link @attribute Constant
 hi link @comment Comment
 hi link @comment.documentation Comment
-hi link @constructor Constant
+hi link @constructor String
 hi link @function Constant
 hi link @function.call Constant
 hi link @function.builtin Identifier
