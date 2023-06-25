@@ -152,13 +152,13 @@
         [ "Todo", "NONE", foreground, "bold" ],
         [ "Type", "NONE", red, "NONE" ],
         [ "Underlined", "NONE", foreground, "NONE" ],
-        [ "StatusLine", "NONE", gray11, "NONE" ],
+        [ "StatusLine", gray2, gray11, "NONE" ],
         [ "StatusLineNC", "NONE", gray9, "NONE" ],
         [ "StatusLineTerm", "StatusLine" ],
         [ "StatusLineTermNC", "StatusLineNC" ],
-        [ "VertSplit", "NONE", background, "NONE" ],
+        [ "VertSplit", "NONE", gray2, "NONE" ],
         [ "TabLine", "NONE", gray11, "NONE" ],
-        [ "TabLineFill", "NONE", foreground, "NONE" ],
+        [ "TabLineFill", gray2, "NONE", "NONE" ],
         [ "TabLineSel", "NONE", foreground, "NONE" ],
         [ "Title", "NONE", foreground, "NONE" ],
         [ "CursorLine", gray2, "NONE", "NONE" ],
@@ -427,6 +427,16 @@
         ["@type.qualifier", "Identifier"],
         ["@variable", "Normal"],
         ["@variable.builtin", "Constant"],
+
+        # UI
+        ["UIBlockRed", red, background, "bold"],
+        ["UIBlockGreen", green, background, "bold"],
+        ["UIBlockYellow", yellow, background, "bold"],
+        ["UIBlockBlue", blue, background, "bold"],
+        ["UIBlockMagenta", magenta, background, "bold"],
+        ["UIBlockCyan", cyan, background, "bold"],
+        ["UIBlockMuted", gray3, gray11, "NONE"],
+        ["UIBlockTransparent", "NONE", gray9, "NONE"],
     ]
 
     # Define the color palette used by :terminal when in GUI Vim

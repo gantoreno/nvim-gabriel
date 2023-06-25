@@ -26,11 +26,11 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Todo ctermbg=NONE ctermfg=15 cterm=bold guibg=NONE guifg=#000000 gui=bold
     hi Type ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#884444 gui=NONE
     hi Underlined ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
-    hi StatusLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
+    hi StatusLine ctermbg=8 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#444444 gui=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
-    hi VertSplit ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#eeeeee gui=NONE
+    hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
     hi TabLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
-    hi TabLineFill ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
+    hi TabLineFill ctermbg=8 ctermfg=NONE cterm=NONE guibg=#dddddd guifg=NONE gui=NONE
     hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi Title ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi CursorLine ctermbg=8 ctermfg=NONE cterm=NONE guibg=#dddddd guifg=NONE gui=NONE
@@ -123,6 +123,14 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi @text.title.5 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
     hi @text.title.6 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
     hi @text.uri ctermbg=NONE ctermfg=15 cterm=underline guibg=NONE guifg=#000000 gui=underline
+    hi UIBlockRed ctermbg=9 ctermfg=0 cterm=bold guibg=#884444 guifg=#eeeeee gui=bold
+    hi UIBlockGreen ctermbg=10 ctermfg=0 cterm=bold guibg=#779966 guifg=#eeeeee gui=bold
+    hi UIBlockYellow ctermbg=11 ctermfg=0 cterm=bold guibg=#AA8844 guifg=#eeeeee gui=bold
+    hi UIBlockBlue ctermbg=12 ctermfg=0 cterm=bold guibg=#447799 guifg=#eeeeee gui=bold
+    hi UIBlockMagenta ctermbg=13 ctermfg=0 cterm=bold guibg=#666699 guifg=#eeeeee gui=bold
+    hi UIBlockCyan ctermbg=14 ctermfg=0 cterm=bold guibg=#449999 guifg=#eeeeee gui=bold
+    hi UIBlockMuted ctermbg=8 ctermfg=8 cterm=NONE guibg=#cccccc guifg=#444444 gui=NONE
+    hi UIBlockTransparent ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -140,11 +148,11 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Todo ctermbg=NONE ctermfg=white cterm=bold
     hi Type ctermbg=NONE ctermfg=red cterm=NONE
     hi Underlined ctermbg=NONE ctermfg=white cterm=NONE
-    hi StatusLine ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi StatusLine ctermbg=darkgray ctermfg=darkgray cterm=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi VertSplit ctermbg=NONE ctermfg=black cterm=NONE
+    hi VertSplit ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi TabLine ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi TabLineFill ctermbg=NONE ctermfg=white cterm=NONE
+    hi TabLineFill ctermbg=darkgray ctermfg=NONE cterm=NONE
     hi TabLineSel ctermbg=NONE ctermfg=white cterm=NONE
     hi Title ctermbg=NONE ctermfg=white cterm=NONE
     hi CursorLine ctermbg=darkgray ctermfg=NONE cterm=NONE
@@ -237,6 +245,14 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi @text.title.5 ctermbg=NONE ctermfg=blue cterm=bold
     hi @text.title.6 ctermbg=NONE ctermfg=blue cterm=bold
     hi @text.uri ctermbg=NONE ctermfg=white cterm=underline
+    hi UIBlockRed ctermbg=red ctermfg=black cterm=bold
+    hi UIBlockGreen ctermbg=green ctermfg=black cterm=bold
+    hi UIBlockYellow ctermbg=yellow ctermfg=black cterm=bold
+    hi UIBlockBlue ctermbg=blue ctermfg=black cterm=bold
+    hi UIBlockMagenta ctermbg=magenta ctermfg=black cterm=bold
+    hi UIBlockCyan ctermbg=cyan ctermfg=black cterm=bold
+    hi UIBlockMuted ctermbg=darkgray ctermfg=darkgray cterm=NONE
+    hi UIBlockTransparent ctermbg=NONE ctermfg=darkgray cterm=NONE
 endif
 
 hi link Normal NONE
