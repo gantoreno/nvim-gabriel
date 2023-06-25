@@ -359,6 +359,7 @@ hi link @constructor String
 hi link @function Constant
 hi link @function.builtin Identifier
 hi link @function.call Constant
+hi link @label String
 hi link @method Constant
 hi link @method.call String
 hi link @parameter Normal
