@@ -109,6 +109,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TelescopePreviewBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#bbbbbb gui=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi @field ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi @label ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi @punctuation.bracket ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi @tag.delimiter ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi @text.emphasis ctermbg=NONE ctermfg=15 cterm=italic guibg=NONE guifg=#ffffff gui=italic
@@ -222,6 +223,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TelescopePreviewBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi @field ctermbg=NONE ctermfg=white cterm=NONE
+    hi @label ctermbg=NONE ctermfg=white cterm=NONE
     hi @punctuation.bracket ctermbg=NONE ctermfg=white cterm=NONE
     hi @tag.delimiter ctermbg=NONE ctermfg=white cterm=NONE
     hi @text.emphasis ctermbg=NONE ctermfg=white cterm=italic
@@ -359,7 +361,6 @@ hi link @constructor String
 hi link @function Constant
 hi link @function.builtin Identifier
 hi link @function.call Constant
-hi link @label String
 hi link @method Constant
 hi link @method.call String
 hi link @parameter Normal
