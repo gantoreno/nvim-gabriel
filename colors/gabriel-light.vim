@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2023-06-24
+" Last Change: 2023-06-25
 
 hi clear
 
@@ -333,7 +333,7 @@ hi link NvimTreeRootFolder Directory
 hi link @attribute Constant
 hi link @comment Comment
 hi link @comment.documentation Comment
-hi link @constructor Constant
+hi link @constructor String
 hi link @function Constant
 hi link @function.call Constant
 hi link @function.builtin Identifier
