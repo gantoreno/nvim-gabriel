@@ -383,9 +383,34 @@
         [ "rubySharpBang", "Comment" ],
 
         # NvimTree
+        [ "NvimtreeNormal", "Directory" ],
+        [ "NvimTreeFolderIcon", "Directory" ],
         [ "NvimTreeFolderIcon", "Directory" ],
         [ "NvimTreeIndentMarker", "Directory" ],
         [ "NvimTreeRootFolder", "Directory" ],
+
+        # TreeSitter
+        ["@attribute", "Constant"],
+        ["@comment", "Comment"],
+        ["@comment.documentation", "Comment"],
+        ["@constructor", "Constant"],
+        ["@function", "Constant"],
+        ["@method", "Constant"],
+        ["@method.call", "String"],
+        ["@parameter", "Normal"],
+        ["@property", "Normal"],
+        ["@punctuation.bracket", "NONE", foreground, "NONE"],
+        ["@punctuation.delimiter", "Normal"],
+        ["@spell", "String"],
+        ["@string", "String"],
+        ["@tag", "String"],
+        ["@tag.attribute", "Constant"],
+        ["@tag.delimiter", "NONE", foreground, "NONE"],
+        ["@type", "Normal"],
+        ["@type.builtin", "String"],
+        ["@type.qualifier", "Identifier"],
+        ["@variable", "Normal"],
+        ["@variable.builtin", "Constant"],
     ]
 
     # Define the color palette used by :terminal when in GUI Vim

@@ -108,6 +108,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TelescopeResultsBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
     hi TelescopePreviewBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
+    hi @punctuation.bracket ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
+    hi @tag.delimiter ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -207,6 +209,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TelescopeResultsBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi TelescopePreviewBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi @punctuation.bracket ctermbg=NONE ctermfg=white cterm=NONE
+    hi @tag.delimiter ctermbg=NONE ctermfg=white cterm=NONE
 endif
 
 hi link Normal NONE
@@ -319,9 +323,30 @@ hi link rubyRegexp String
 hi link rubyConstant Constant
 hi link rubyInstanceVariable Normal
 hi link rubySharpBang Comment
+hi link NvimtreeNormal Directory
+hi link NvimTreeFolderIcon Directory
 hi link NvimTreeFolderIcon Directory
 hi link NvimTreeIndentMarker Directory
 hi link NvimTreeRootFolder Directory
+hi link @attribute Constant
+hi link @comment Comment
+hi link @comment.documentation Comment
+hi link @constructor Constant
+hi link @function Constant
+hi link @method Constant
+hi link @method.call String
+hi link @parameter Normal
+hi link @property Normal
+hi link @punctuation.delimiter Normal
+hi link @spell String
+hi link @string String
+hi link @tag String
+hi link @tag.attribute Constant
+hi link @type Normal
+hi link @type.builtin String
+hi link @type.qualifier Identifier
+hi link @variable Normal
+hi link @variable.builtin Constant
 
 let g:terminal_ansi_colors = [ '#000000', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#CCCCCC', '#444444', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#FFFFFF', ]
 
