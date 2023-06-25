@@ -342,7 +342,7 @@ hi link @method.call String
 hi link @parameter Normal
 hi link @property Normal
 hi link @punctuation.delimiter Normal
-hi link @punctuation.special Identifier
+hi link @punctuation.special Normal
 hi link @spell Normal
 hi link @string String
 hi link @tag String
