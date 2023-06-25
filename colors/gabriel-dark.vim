@@ -338,6 +338,7 @@ hi link @method.call String
 hi link @parameter Normal
 hi link @property Normal
 hi link @punctuation.delimiter Normal
+hi link @punctuation.special String
 hi link @spell String
 hi link @string String
 hi link @tag String
