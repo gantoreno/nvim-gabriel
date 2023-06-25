@@ -335,6 +335,7 @@ hi link @comment Comment
 hi link @comment.documentation Comment
 hi link @constructor Constant
 hi link @function Constant
+hi link @function.builtin Identifier
 hi link @method Constant
 hi link @method.call String
 hi link @parameter Normal
