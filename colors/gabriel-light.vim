@@ -111,6 +111,16 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi @field ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @punctuation.bracket ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @tag.delimiter ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
+    hi @text.emphasis ctermbg=NONE ctermfg=15 cterm=italic guibg=NONE guifg=#000000 gui=italic
+    hi @text.reference ctermbg=NONE ctermfg=12 cterm=underline guibg=NONE guifg=#447799 gui=underline
+    hi @text.strong ctermbg=NONE ctermfg=15 cterm=bold guibg=NONE guifg=#000000 gui=bold
+    hi @text.title.1 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
+    hi @text.title.2 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
+    hi @text.title.3 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
+    hi @text.title.4 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
+    hi @text.title.5 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
+    hi @text.title.6 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
+    hi @text.uri ctermbg=NONE ctermfg=15 cterm=underline guibg=NONE guifg=#000000 gui=underline
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
@@ -213,6 +223,16 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi @field ctermbg=NONE ctermfg=white cterm=NONE
     hi @punctuation.bracket ctermbg=NONE ctermfg=white cterm=NONE
     hi @tag.delimiter ctermbg=NONE ctermfg=white cterm=NONE
+    hi @text.emphasis ctermbg=NONE ctermfg=white cterm=italic
+    hi @text.reference ctermbg=NONE ctermfg=blue cterm=underline
+    hi @text.strong ctermbg=NONE ctermfg=white cterm=bold
+    hi @text.title.1 ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.2 ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.3 ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.4 ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.5 ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.6 ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.uri ctermbg=NONE ctermfg=white cterm=underline
 endif
 
 hi link Normal NONE
@@ -335,8 +355,8 @@ hi link @comment Comment
 hi link @comment.documentation Comment
 hi link @constructor String
 hi link @function Constant
-hi link @function.call Constant
 hi link @function.builtin Identifier
+hi link @function.call Constant
 hi link @method Constant
 hi link @method.call String
 hi link @parameter Normal
