@@ -131,7 +131,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi UIBlockMagenta ctermbg=13 ctermfg=0 cterm=bold guibg=#666699 guifg=#eeeeee gui=bold
     hi UIBlockCyan ctermbg=14 ctermfg=0 cterm=bold guibg=#449999 guifg=#eeeeee gui=bold
     hi UIBlockMuted ctermbg=8 ctermfg=8 cterm=NONE guibg=#cccccc guifg=#444444 gui=NONE
-    hi UIBlockLight ctermbg=15 ctermfg=0 cterm=NONE guibg=#000000 guifg=#eeeeee gui=NONE
+    hi UIBlockInverse ctermbg=15 ctermfg=0 cterm=bold guibg=#000000 guifg=#eeeeee gui=bold
     hi UIBlockTransparent ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
@@ -255,7 +255,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi UIBlockMagenta ctermbg=magenta ctermfg=black cterm=bold
     hi UIBlockCyan ctermbg=cyan ctermfg=black cterm=bold
     hi UIBlockMuted ctermbg=darkgray ctermfg=darkgray cterm=NONE
-    hi UIBlockLight ctermbg=white ctermfg=black cterm=NONE
+    hi UIBlockInverse ctermbg=white ctermfg=black cterm=bold
     hi UIBlockTransparent ctermbg=NONE ctermfg=darkgray cterm=NONE
 endif
 
