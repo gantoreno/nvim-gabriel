@@ -108,7 +108,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TelescopeResultsBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#bbbbbb gui=NONE
     hi TelescopePreviewBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#bbbbbb gui=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
-    hi NvimTreeRootFolder ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
     hi @field ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi @label ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi @punctuation.bracket ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
@@ -232,7 +231,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TelescopeResultsBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi TelescopePreviewBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi NvimTreeRootFolder ctermbg=NONE ctermfg=blue cterm=bold
     hi @field ctermbg=NONE ctermfg=white cterm=NONE
     hi @label ctermbg=NONE ctermfg=white cterm=NONE
     hi @punctuation.bracket ctermbg=NONE ctermfg=white cterm=NONE
@@ -373,6 +371,7 @@ hi link NvimtreeNormal Directory
 hi link NvimTreeFolderIcon Directory
 hi link NvimTreeFolderIcon Directory
 hi link NvimTreeIndentMarker Directory
+hi link NvimTreeRootFolder Directory
 hi link @attribute Constant
 hi link @comment Comment
 hi link @comment.documentation Comment
