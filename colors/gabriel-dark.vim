@@ -95,8 +95,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi StatusError ctermbg=NONE ctermfg=9 cterm=bold guibg=NONE guifg=#aa6666 gui=bold
     hi TabLineTitle ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi TabLineTitleActive ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
-    hi ErrorStrong ctermbg=StatusLine ctermfg=9 cterm=bold guibg=StatusLine guifg=#aa6666 gui=bold
-    hi WarningStrong ctermbg=StatusLine ctermfg=11 cterm=bold guibg=StatusLine guifg=#ccaa66 gui=bold
+    hi ErrorStrong ctermbg=8 ctermfg=9 cterm=bold guibg=#222222 guifg=#aa6666 gui=bold
+    hi WarningStrong ctermbg=8 ctermfg=11 cterm=bold guibg=#222222 guifg=#ccaa66 gui=bold
     hi CocExplorerGitPathChange ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#99bb88 gui=NONE
     hi CocExplorerGitContentChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#ccaa66 gui=NONE
     hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#99bb88 gui=NONE
@@ -220,8 +220,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi StatusError ctermbg=NONE ctermfg=red cterm=bold
     hi TabLineTitle ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi TabLineTitleActive ctermbg=NONE ctermfg=blue cterm=bold
-    hi ErrorStrong ctermbg=StatusLine ctermfg=red cterm=bold
-    hi WarningStrong ctermbg=StatusLine ctermfg=yellow cterm=bold
+    hi ErrorStrong ctermbg=darkgray ctermfg=red cterm=bold
+    hi WarningStrong ctermbg=darkgray ctermfg=yellow cterm=bold
     hi CocExplorerGitPathChange ctermbg=NONE ctermfg=green cterm=NONE
     hi CocExplorerGitContentChange ctermbg=NONE ctermfg=yellow cterm=NONE
     hi SignifySignAdd ctermbg=NONE ctermfg=green cterm=NONE
