@@ -381,6 +381,7 @@ hi link @function.builtin Identifier
 hi link @function.call Constant
 hi link @method Constant
 hi link @method.call String
+hi link @namespace String
 hi link @parameter Normal
 hi link @property Normal
 hi link @punctuation.delimiter Normal
