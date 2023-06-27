@@ -127,6 +127,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi @text.title.5 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
     hi @text.title.6 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
     hi @text.uri ctermbg=NONE ctermfg=15 cterm=underline guibg=NONE guifg=#ffffff gui=underline
+    hi @type.definition.css ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi UIBlockRed ctermbg=9 ctermfg=0 cterm=bold guibg=#aa6666 guifg=#111111 gui=bold
     hi UIBlockGreen ctermbg=10 ctermfg=0 cterm=bold guibg=#99bb88 guifg=#111111 gui=bold
     hi UIBlockYellow ctermbg=11 ctermfg=0 cterm=bold guibg=#ccaa66 guifg=#111111 gui=bold
@@ -254,6 +255,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi @text.title.5 ctermbg=NONE ctermfg=blue cterm=bold
     hi @text.title.6 ctermbg=NONE ctermfg=blue cterm=bold
     hi @text.uri ctermbg=NONE ctermfg=white cterm=underline
+    hi @type.definition.css ctermbg=NONE ctermfg=white cterm=NONE
     hi UIBlockRed ctermbg=red ctermfg=black cterm=bold
     hi UIBlockGreen ctermbg=green ctermfg=black cterm=bold
     hi UIBlockYellow ctermbg=yellow ctermfg=black cterm=bold
@@ -391,6 +393,7 @@ hi link @method Constant
 hi link @method.call String
 hi link @namespace String
 hi link @parameter Normal
+hi link @property.css String
 hi link @punctuation.delimiter Normal
 hi link @punctuation.special Normal
 hi link @spell Normal
@@ -399,6 +402,7 @@ hi link @tag String
 hi link @tag.attribute Constant
 hi link @type Normal
 hi link @type.builtin String
+hi link @type.css String
 hi link @type.qualifier Identifier
 hi link @variable Normal
 hi link @variable.builtin Constant
