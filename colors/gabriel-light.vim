@@ -411,7 +411,7 @@ hi link @lsp.type.type @type.builtin
 hi link @lsp.type.parameter @parameter
 hi link @lsp.type.function @variable.builtin
 hi link @lsp.type.variable @variable
-hi link @lsp.type.namspace @type.builtin
+hi link @lsp.type.namespace @type.builtin
 
 let g:terminal_ansi_colors = [ '#000000', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#CCCCCC', '#444444', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#FFFFFF', ]
 
