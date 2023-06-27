@@ -414,6 +414,8 @@ hi link @type.css String
 hi link @type.qualifier Identifier
 hi link @variable Normal
 hi link @variable.builtin Constant
+hi link @conceal.json String
+hi link @label.json String
 hi link @lsp.type.property @type
 hi link @lsp.type.type @type.builtin
 hi link @lsp.type.parameter @parameter

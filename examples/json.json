@@ -1,0 +1,8 @@
+{
+  "foo": "bar",
+  "array": [1, 2, 3],
+  "key": {
+    "value": "pairs",
+    "active": false
+  }
+}
