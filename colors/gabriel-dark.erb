@@ -137,6 +137,7 @@
     # are good reads, by the way.
     highlights = [
         [ "Normal", "NONE" ],
+        [ "Foreground", "NONE", foreground, "NONE" ],
         [ "NonText", "NONE", background, "NONE" ],
         [ "EndOfBuffer","NonText" ],
         [ "Comment", "NONE", gray9, "NONE" ],
@@ -405,7 +406,7 @@
         ["@method.call", "String"],
         ["@namespace", "String"],
         ["@parameter", "Normal"],
-        ["@property", "Normal"],
+        ["@property", "NONE", foreground, "NONE"],
         ["@punctuation.bracket", "NONE", foreground, "NONE"],
         ["@punctuation.delimiter", "Normal"],
         ["@punctuation.special", "Normal"],

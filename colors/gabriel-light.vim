@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2023-06-26
+" Last Change: 2023-06-27
 
 hi clear
 
@@ -13,6 +13,7 @@ endif
 let colors_name = "gabriel-light"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
+    hi Foreground ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi NonText ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#eeeeee gui=NONE
     hi Comment ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
     hi Constant ctermbg=NONE ctermfg=13 cterm=NONE guibg=NONE guifg=#666699 gui=NONE
@@ -112,6 +113,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi IndentBlanklineChar ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
     hi @field ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @label ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
+    hi @property ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @punctuation.bracket ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @tag.delimiter ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @text.emphasis ctermbg=NONE ctermfg=15 cterm=italic guibg=NONE guifg=#000000 gui=italic
@@ -138,6 +140,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
+    hi Foreground ctermbg=NONE ctermfg=white cterm=NONE
     hi NonText ctermbg=NONE ctermfg=black cterm=NONE
     hi Comment ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Constant ctermbg=NONE ctermfg=magenta cterm=NONE
@@ -237,6 +240,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi IndentBlanklineChar ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi @field ctermbg=NONE ctermfg=white cterm=NONE
     hi @label ctermbg=NONE ctermfg=white cterm=NONE
+    hi @property ctermbg=NONE ctermfg=white cterm=NONE
     hi @punctuation.bracket ctermbg=NONE ctermfg=white cterm=NONE
     hi @tag.delimiter ctermbg=NONE ctermfg=white cterm=NONE
     hi @text.emphasis ctermbg=NONE ctermfg=white cterm=italic
@@ -387,7 +391,6 @@ hi link @method Constant
 hi link @method.call String
 hi link @namespace String
 hi link @parameter Normal
-hi link @property Normal
 hi link @punctuation.delimiter Normal
 hi link @punctuation.special Normal
 hi link @spell Normal
