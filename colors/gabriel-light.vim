@@ -13,7 +13,7 @@ endif
 let colors_name = "gabriel-light"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi FloatBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
+    hi FloatBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi Foreground ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi NonText ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#eeeeee gui=NONE
     hi Comment ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
@@ -108,6 +108,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CocInfoSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#AA8844 gui=NONE
     hi CocWarningSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#AA8844 gui=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
+    hi CmpItemAbbr ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
+    hi CmpItemAbbrMatch ctermbg=NONE ctermfg=15 cterm=bold guibg=NONE guifg=#000000 gui=bold
     hi @field ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @label ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @property ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
@@ -233,6 +235,8 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CocInfoSign ctermbg=NONE ctermfg=yellow cterm=NONE
     hi CocWarningSign ctermbg=NONE ctermfg=yellow cterm=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi CmpItemAbbr ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi CmpItemAbbrMatch ctermbg=NONE ctermfg=white cterm=bold
     hi @field ctermbg=NONE ctermfg=white cterm=NONE
     hi @label ctermbg=NONE ctermfg=white cterm=NONE
     hi @property ctermbg=NONE ctermfg=white cterm=NONE
@@ -382,6 +386,7 @@ hi link NvimTreeFolderIcon Directory
 hi link NvimTreeIndentMarker Directory
 hi link NvimTreeRootFolder Directory
 hi link FloatermBorder FloatBorder
+hi link CmpItemKind Constant
 hi link @attribute Constant
 hi link @comment Comment
 hi link @comment.documentation Comment
@@ -414,6 +419,7 @@ hi link @lsp.type.function @variable.builtin
 hi link @lsp.type.variable @variable
 hi link @lsp.type.namespace @type.builtin
 hi link @lsp.type.class @type.builtin
+hi link @lsp.type.interface @type.builtin
 
 let g:terminal_ansi_colors = [ '#000000', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#CCCCCC', '#444444', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#FFFFFF', ]
 

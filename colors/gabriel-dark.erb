@@ -138,7 +138,7 @@
     highlights = [
         [ "Normal", "NONE" ],
         [ "NormalFloat", "Normal" ],
-        [ "FloatBorder", "NONE", gray9, "NONE" ],
+        [ "FloatBorder", "NONE", gray6, "NONE" ],
         [ "Foreground", "NONE", foreground, "NONE" ],
         [ "NonText", "NONE", background, "NONE" ],
         [ "EndOfBuffer","NonText" ],
@@ -397,6 +397,11 @@
         # Floaterm
         [ "FloatermBorder", "FloatBorder" ],
 
+        # Completion
+        [ "CmpItemAbbr", "NONE", gray9, "NONE" ],
+        [ "CmpItemAbbrMatch", "NONE", foreground, "bold" ],
+        [ "CmpItemKind", "Constant" ],
+
         # TreeSitter
         ["@attribute", "Constant"],
         ["@comment", "Comment"],
@@ -449,6 +454,7 @@
         ["@lsp.type.variable", "@variable"],
         ["@lsp.type.namespace", "@type.builtin"],
         ["@lsp.type.class", "@type.builtin"],
+        ["@lsp.type.interface", "@type.builtin"],
 
         # UI
         ["UIBlockRed", red, background, "bold"],
