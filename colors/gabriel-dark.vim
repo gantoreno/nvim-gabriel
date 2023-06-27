@@ -13,6 +13,7 @@ endif
 let colors_name = "gabriel-dark"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
+    hi FloatBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
     hi Foreground ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi NonText ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#111111 gui=NONE
     hi Comment ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#999999 gui=NONE
@@ -137,6 +138,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
+    hi FloatBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi Foreground ctermbg=NONE ctermfg=white cterm=NONE
     hi NonText ctermbg=NONE ctermfg=black cterm=NONE
     hi Comment ctermbg=NONE ctermfg=darkgray cterm=NONE
@@ -358,10 +360,10 @@ hi link pythonStrFormat Constant
 hi link CocExplorerFileRootName Directory
 hi link CocExplorerFileFullpath Directory
 hi link CocExplorerFileFilename Directory
-hi link TelescopeBorder VertSplit
-hi link TelescopePromptBorder VertSplit
-hi link TelescopeResultsBorder VertSplit
-hi link TelescopePreviewBorder VertSplit
+hi link TelescopeBorder FloatBorder
+hi link TelescopePromptBorder FloatBorder
+hi link TelescopeResultsBorder FloatBorder
+hi link TelescopePreviewBorder FloatBorder
 hi link zshVariableDef Constant
 hi link zshFunction Constant
 hi link zshDeref Constant
@@ -379,6 +381,7 @@ hi link NvimTreeFolderIcon Directory
 hi link NvimTreeFolderIcon Directory
 hi link NvimTreeIndentMarker Directory
 hi link NvimTreeRootFolder Directory
+hi link FloatermBorder FloatBorder
 hi link @attribute Constant
 hi link @comment Comment
 hi link @comment.documentation Comment

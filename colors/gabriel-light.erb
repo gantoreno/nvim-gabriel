@@ -138,6 +138,7 @@
     highlights = [
         [ "Normal", "NONE" ],
         [ "NormalFloat", "Normal" ],
+        [ "FloatBorder", "NONE", gray9, "NONE" ],
         [ "Foreground", "NONE", foreground, "NONE" ],
         [ "NonText", "NONE", background, "NONE" ],
         [ "EndOfBuffer","NonText" ],
@@ -362,10 +363,10 @@
         [ "CocWarningSign", "NONE", yellow, "NONE" ],
 
         # Telescope
-        [ "TelescopeBorder", "VertSplit" ],
-        [ "TelescopePromptBorder",  "VertSplit" ],
-        [ "TelescopeResultsBorder", "VertSplit" ],
-        [ "TelescopePreviewBorder", "VertSplit" ],
+        [ "TelescopeBorder", "FloatBorder" ],
+        [ "TelescopePromptBorder",  "FloatBorder" ],
+        [ "TelescopeResultsBorder", "FloatBorder" ],
+        [ "TelescopePreviewBorder", "FloatBorder" ],
 
         # IndentBlankline
         [ "IndentBlanklineChar", "NONE", gray9, "NONE" ],
@@ -392,6 +393,9 @@
         [ "NvimTreeFolderIcon", "Directory" ],
         [ "NvimTreeIndentMarker", "Directory" ],
         [ "NvimTreeRootFolder", "Directory" ],
+
+        # Floaterm
+        [ "FloatermBorder", "FloatBorder" ],
 
         # TreeSitter
         ["@attribute", "Constant"],
