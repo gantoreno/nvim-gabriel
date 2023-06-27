@@ -328,6 +328,7 @@ hi link typescriptEndColons Normal
 hi link typescriptDocTags Identifier
 hi link typescriptDocNotation Identifier
 hi link typescriptFuncComma Normal
+hi link typescriptFuncName Constant
 hi link typescriptCall Normal
 hi link typescriptBraces javaScriptBraces
 hi link typescriptIdentifier Constant
