@@ -321,9 +321,10 @@ hi link typescriptTypeParameter String
 hi link typescriptPredefinedType String
 hi link typescriptClassHeritage Constant
 hi link typescriptTypeReference String
-hi link typescriptTypeAnnotation Identifier
+hi link typescriptTypeAnnotation Normal
 hi link typescriptAssign Operator
-hi link typescriptMember Constant
+hi link typescriptMember Normal
+hi link typescriptEndColons Normal
 hi link typescriptDocTags Identifier
 hi link typescriptDocNotation Identifier
 hi link typescriptFuncComma Normal
