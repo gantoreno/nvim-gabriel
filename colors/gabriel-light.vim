@@ -386,6 +386,7 @@ hi link @attribute Constant
 hi link @comment Comment
 hi link @comment.documentation Comment
 hi link @constructor String
+hi link @constant.builtin Constant
 hi link @function Constant
 hi link @function.builtin Identifier
 hi link @function.call Constant
