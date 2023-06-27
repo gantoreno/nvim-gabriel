@@ -402,6 +402,11 @@ hi link @type.builtin String
 hi link @type.qualifier Identifier
 hi link @variable Normal
 hi link @variable.builtin Constant
+hi link @lsp.type.property @type
+hi link @lsp.type.type @type.builtin
+hi link @lsp.type.parameter @parameter
+hi link @lsp.type.function @variable.builtin
+hi link @lsp.type.variable @variable
 
 let g:terminal_ansi_colors = [ '#000000', '#aa6666', '#99bb88', '#ccaa66', '#6699bb', '#8888bb', '#66bbbb', '#cccccc', '#444444', '#aa6666', '#99bb88', '#ccaa66', '#6699bb', '#8888bb', '#66bbbb', '#ffffff', ]
 
