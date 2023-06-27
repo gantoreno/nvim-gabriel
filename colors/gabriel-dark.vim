@@ -403,6 +403,7 @@ hi link @namespace String
 hi link @parameter Normal
 hi link @property.css String
 hi link @punctuation.delimiter Normal
+hi link @punctuation.delimiter.astro Comment
 hi link @punctuation.special Normal
 hi link @spell Normal
 hi link @string String
