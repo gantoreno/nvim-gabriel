@@ -106,10 +106,6 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CocErrorSign ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#884444 gui=NONE
     hi CocInfoSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#AA8844 gui=NONE
     hi CocWarningSign ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#AA8844 gui=NONE
-    hi TelescopeBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
-    hi TelescopePromptBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
-    hi TelescopeResultsBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
-    hi TelescopePreviewBorder ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
     hi @field ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi @label ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
@@ -234,10 +230,6 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi CocErrorSign ctermbg=NONE ctermfg=red cterm=NONE
     hi CocInfoSign ctermbg=NONE ctermfg=yellow cterm=NONE
     hi CocWarningSign ctermbg=NONE ctermfg=yellow cterm=NONE
-    hi TelescopeBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi TelescopePromptBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi TelescopeResultsBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi TelescopePreviewBorder ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi IndentBlanklineChar ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi @field ctermbg=NONE ctermfg=white cterm=NONE
     hi @label ctermbg=NONE ctermfg=white cterm=NONE
@@ -268,6 +260,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
 endif
 
 hi link Normal NONE
+hi link NormalFloat Normal
 hi link EndOfBuffer NonText
 hi link Number Constant
 hi link StatusLineTerm StatusLine
@@ -365,6 +358,10 @@ hi link pythonStrFormat Constant
 hi link CocExplorerFileRootName Directory
 hi link CocExplorerFileFullpath Directory
 hi link CocExplorerFileFilename Directory
+hi link TelescopeBorder VertSplit
+hi link TelescopePromptBorder VertSplit
+hi link TelescopeResultsBorder VertSplit
+hi link TelescopePreviewBorder VertSplit
 hi link zshVariableDef Constant
 hi link zshFunction Constant
 hi link zshDeref Constant

@@ -137,6 +137,7 @@
     # are good reads, by the way.
     highlights = [
         [ "Normal", "NONE" ],
+        [ "NormalFloat", "Normal" ],
         [ "Foreground", "NONE", foreground, "NONE" ],
         [ "NonText", "NONE", background, "NONE" ],
         [ "EndOfBuffer","NonText" ],
@@ -361,10 +362,10 @@
         [ "CocWarningSign", "NONE", yellow, "NONE" ],
 
         # Telescope
-        [ "TelescopeBorder", "NONE", gray11, "NONE" ],
-        [ "TelescopePromptBorder",  "NONE", gray11, "NONE" ],
-        [ "TelescopeResultsBorder", "NONE", gray11, "NONE" ],
-        [ "TelescopePreviewBorder", "NONE", gray11, "NONE" ],
+        [ "TelescopeBorder", "VertSplit" ],
+        [ "TelescopePromptBorder",  "VertSplit" ],
+        [ "TelescopeResultsBorder", "VertSplit" ],
+        [ "TelescopePreviewBorder", "VertSplit" ],
 
         # IndentBlankline
         [ "IndentBlanklineChar", "NONE", gray9, "NONE" ],
