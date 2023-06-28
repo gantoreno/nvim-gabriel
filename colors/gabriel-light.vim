@@ -400,6 +400,7 @@ hi link @function.builtin Identifier
 hi link @function.call Constant
 hi link @method Constant
 hi link @method.call String
+hi link @method.call.cpp Constant
 hi link @namespace String
 hi link @parameter Normal
 hi link @property.css String
@@ -412,6 +413,8 @@ hi link @tag String
 hi link @tag.attribute Constant
 hi link @type Normal
 hi link @type.builtin String
+hi link @type.builtin String
+hi link @type.cpp String
 hi link @type.css String
 hi link @type.qualifier Identifier
 hi link @variable Normal
