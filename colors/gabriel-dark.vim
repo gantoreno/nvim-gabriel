@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2023-06-27
+" Last Change: 2023-06-28
 
 hi clear
 
@@ -393,6 +393,7 @@ hi link @attribute Constant
 hi link @comment Comment
 hi link @comment.documentation Comment
 hi link @constructor String
+hi link @constructor.lua Normal
 hi link @constant.builtin Constant
 hi link @function Constant
 hi link @function.builtin Identifier
@@ -418,6 +419,7 @@ hi link @variable.builtin Constant
 hi link @conceal.json String
 hi link @label.json String
 hi link @lsp.type.property @type
+hi link @lsp.type.method @method
 hi link @lsp.type.type @type.builtin
 hi link @lsp.type.parameter @parameter
 hi link @lsp.type.function @variable.builtin
