@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2023-06-28
+" Last Change: 2023-06-29
 
 hi clear
 
@@ -274,6 +274,7 @@ hi link StatusLineTermNC StatusLineNC
 hi link WarningMsg Error
 hi link CursorIM Cursor
 hi link Terminal Normal
+hi link configfunction Normal
 hi link htmlTag Normal
 hi link htmlEndTag Normal
 hi link htmlArg Constant
