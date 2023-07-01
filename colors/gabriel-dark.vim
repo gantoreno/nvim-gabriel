@@ -132,12 +132,18 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi @text.literal ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi @text.reference ctermbg=NONE ctermfg=12 cterm=underline guibg=NONE guifg=#6699bb gui=underline
     hi @text.strong ctermbg=NONE ctermfg=15 cterm=bold guibg=NONE guifg=#ffffff gui=bold
-    hi @text.title.1 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
-    hi @text.title.2 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
-    hi @text.title.3 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
-    hi @text.title.4 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
-    hi @text.title.5 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
-    hi @text.title.6 ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.1.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.2.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.3.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.4.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.5.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.6.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.1.marker.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.2.marker.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.3.marker.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.4.marker.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.5.marker.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
+    hi @text.title.6.marker.markdown ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#6699bb gui=bold
     hi @text.uri ctermbg=NONE ctermfg=15 cterm=underline guibg=NONE guifg=#ffffff gui=underline
     hi @type.definition.css ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi UIBlockRed ctermbg=9 ctermfg=0 cterm=bold guibg=#aa6666 guifg=#111111 gui=bold
@@ -272,12 +278,18 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi @text.literal ctermbg=NONE ctermfg=white cterm=NONE
     hi @text.reference ctermbg=NONE ctermfg=blue cterm=underline
     hi @text.strong ctermbg=NONE ctermfg=white cterm=bold
-    hi @text.title.1 ctermbg=NONE ctermfg=blue cterm=bold
-    hi @text.title.2 ctermbg=NONE ctermfg=blue cterm=bold
-    hi @text.title.3 ctermbg=NONE ctermfg=blue cterm=bold
-    hi @text.title.4 ctermbg=NONE ctermfg=blue cterm=bold
-    hi @text.title.5 ctermbg=NONE ctermfg=blue cterm=bold
-    hi @text.title.6 ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.1.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.2.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.3.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.4.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.5.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.6.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.1.marker.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.2.marker.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.3.marker.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.4.marker.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.5.marker.markdown ctermbg=NONE ctermfg=blue cterm=bold
+    hi @text.title.6.marker.markdown ctermbg=NONE ctermfg=blue cterm=bold
     hi @text.uri ctermbg=NONE ctermfg=white cterm=underline
     hi @type.definition.css ctermbg=NONE ctermfg=white cterm=NONE
     hi UIBlockRed ctermbg=red ctermfg=black cterm=bold
