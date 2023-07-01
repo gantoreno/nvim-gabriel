@@ -425,6 +425,11 @@ hi link NvimTreeFolderIcon Directory
 hi link NvimTreeFolderIcon Directory
 hi link NvimTreeIndentMarker Directory
 hi link NvimTreeRootFolder Directory
+hi link NvimTreeGitDirty CocExplorerGitContentChange
+hi link NvimTreeGitStaged CocExplorerGitPathChange
+hi link NvimTreeGitRenamed CocExplorerGitContentChange
+hi link NvimTreeGitNew CocExplorerGitPathChange
+hi link NvimTreeGitDeleted CocExplorerGitContentChange
 hi link FloatermBorder FloatBorder
 hi link CmpItemKind Constant
 hi link @attribute Constant
