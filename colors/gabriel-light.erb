@@ -78,6 +78,10 @@
     cyan        = ["#449999", 14, "cyan"]
     white       = ["#FFFFFF", 15, "white"]
 
+    faded_red = ["#d7cccc", 1, "red"]
+    faded_yellow = ["#dfd9ce", 3, "yellow"]
+    faded_cyan = ["#d0dcdc", 6, "cyan"]
+
     background  = ["#eeeeee", 0, "black"]
     foreground  = ["#000000", 15, "white"]
 
@@ -155,13 +159,13 @@
         [ "Todo", "NONE", foreground, "bold" ],
         [ "Type", "NONE", red, "NONE" ],
         [ "Underlined", "NONE", foreground, "NONE" ],
-        [ "StatusLine", gray2, gray11, "NONE" ],
+        [ "StatusLine", "NONE", gray11, "NONE" ],
         [ "StatusLineNC", "NONE", gray9, "NONE" ],
         [ "StatusLineTerm", "StatusLine" ],
         [ "StatusLineTermNC", "StatusLineNC" ],
-        [ "VertSplit", "NONE", gray2, "NONE" ],
+        [ "VertSplit", "NONE", background, "NONE" ],
         [ "TabLine", "NONE", gray11, "NONE" ],
-        [ "TabLineFill", gray2, "NONE", "NONE" ],
+        [ "TabLineFill", "NONE", "NONE", "NONE" ],
         [ "TabLineSel", "NONE", foreground, "NONE" ],
         [ "Title", "NONE", foreground, "NONE" ],
         [ "CursorLine", gray2, "NONE", "NONE" ],
@@ -197,7 +201,7 @@
         [ "ModeMsg", "NONE", foreground, "NONE" ],
         [ "MoreMsg", "NONE", foreground, "NONE" ],
         [ "Question", "NONE", foreground, "NONE" ],
-        [ "WarningMsg", "Error" ],
+        [ "WarningMsg", "NONE", yellow, "NONE"],
         [ "Cursor", "NONE", foreground, "NONE" ],
         [ "CursorIM", "Cursor" ],
         [ "CursorColumn", "NONE", foreground, "NONE" ],
@@ -231,6 +235,20 @@
         [ "TabLineTitleActive", "NONE", blue, "bold" ],
         [ "ErrorStrong", gray2, red, "bold" ],
         [ "WarningStrong", gray2, yellow, "bold" ],
+
+        # Diagnostic
+        [ "DiagnosticError", "NONE", red, "NONE" ],
+        [ "DiagnosticWarn", "NONE", yellow, "NONE" ],
+        [ "DiagnosticInfo", "NONE", cyan, "NONE" ],
+        [ "DiagnosticHint", "NONE", gray9, "NONE" ],
+        [ "DiagnosticUnderlineError", "NONE", "NONE", "undercurl", red ],
+        [ "DiagnosticUnderlineWarn", "NONE", "NONE", "undercurl", yellow ],
+        [ "DiagnosticUnderlineInfo", "NONE", "NONE", "undercurl", cyan ],
+        [ "DiagnosticUnderlineHint", "NONE", "NONE", "undercurl", gray9 ],
+        [ "DiagnosticVirtualTextError", faded_red, red, "NONE" ],
+        [ "DiagnosticVirtualTextWarn", faded_yellow, yellow, "NONE" ],
+        [ "DiagnosticVirtualTextInfo", faded_cyan, cyan, "NONE" ],
+        [ "DiagnosticVirtualTextHint", "NONE", gray9, "NONE" ],
 
         # Custom Groups
         #

@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2023-06-29
+" Last Change: 2023-07-01
 
 hi clear
 
@@ -28,11 +28,11 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Todo ctermbg=NONE ctermfg=15 cterm=bold guibg=NONE guifg=#000000 gui=bold
     hi Type ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#884444 gui=NONE
     hi Underlined ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
-    hi StatusLine ctermbg=8 ctermfg=8 cterm=NONE guibg=#dddddd guifg=#444444 gui=NONE
+    hi StatusLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
-    hi VertSplit ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#dddddd gui=NONE
+    hi VertSplit ctermbg=NONE ctermfg=0 cterm=NONE guibg=NONE guifg=#eeeeee gui=NONE
     hi TabLine ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
-    hi TabLineFill ctermbg=8 ctermfg=NONE cterm=NONE guibg=#dddddd guifg=NONE gui=NONE
+    hi TabLineFill ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi TabLineSel ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi Title ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi CursorLine ctermbg=8 ctermfg=NONE cterm=NONE guibg=#dddddd guifg=NONE gui=NONE
@@ -68,6 +68,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi ModeMsg ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi MoreMsg ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi Question ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
+    hi WarningMsg ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#AA8844 gui=NONE
     hi Cursor ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi CursorColumn ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
     hi QuickFixLine ctermbg=NONE ctermfg=15 cterm=NONE guibg=NONE guifg=#000000 gui=NONE
@@ -99,6 +100,18 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi TabLineTitleActive ctermbg=NONE ctermfg=12 cterm=bold guibg=NONE guifg=#447799 gui=bold
     hi ErrorStrong ctermbg=8 ctermfg=9 cterm=bold guibg=#dddddd guifg=#884444 gui=bold
     hi WarningStrong ctermbg=8 ctermfg=11 cterm=bold guibg=#dddddd guifg=#AA8844 gui=bold
+    hi DiagnosticError ctermbg=NONE ctermfg=9 cterm=NONE guibg=NONE guifg=#884444 gui=NONE
+    hi DiagnosticWarn ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#AA8844 gui=NONE
+    hi DiagnosticInfo ctermbg=NONE ctermfg=14 cterm=NONE guibg=NONE guifg=#449999 gui=NONE
+    hi DiagnosticHint ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
+    hi DiagnosticUnderlineError ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#884444
+    hi DiagnosticUnderlineWarn ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#AA8844
+    hi DiagnosticUnderlineInfo ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#449999
+    hi DiagnosticUnderlineHint ctermbg=NONE ctermfg=NONE cterm=undercurl guibg=NONE guifg=NONE gui=undercurl guisp=#666666
+    hi DiagnosticVirtualTextError ctermbg=1 ctermfg=9 cterm=NONE guibg=#d7cccc guifg=#884444 gui=NONE
+    hi DiagnosticVirtualTextWarn ctermbg=3 ctermfg=11 cterm=NONE guibg=#dfd9ce guifg=#AA8844 gui=NONE
+    hi DiagnosticVirtualTextInfo ctermbg=6 ctermfg=14 cterm=NONE guibg=#d0dcdc guifg=#449999 gui=NONE
+    hi DiagnosticVirtualTextHint ctermbg=NONE ctermfg=8 cterm=NONE guibg=NONE guifg=#666666 gui=NONE
     hi CocExplorerGitPathChange ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#779966 gui=NONE
     hi CocExplorerGitContentChange ctermbg=NONE ctermfg=11 cterm=NONE guibg=NONE guifg=#AA8844 gui=NONE
     hi SignifySignAdd ctermbg=NONE ctermfg=10 cterm=NONE guibg=NONE guifg=#779966 gui=NONE
@@ -155,11 +168,11 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Todo ctermbg=NONE ctermfg=white cterm=bold
     hi Type ctermbg=NONE ctermfg=red cterm=NONE
     hi Underlined ctermbg=NONE ctermfg=white cterm=NONE
-    hi StatusLine ctermbg=darkgray ctermfg=darkgray cterm=NONE
+    hi StatusLine ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi StatusLineNC ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi VertSplit ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi VertSplit ctermbg=NONE ctermfg=black cterm=NONE
     hi TabLine ctermbg=NONE ctermfg=darkgray cterm=NONE
-    hi TabLineFill ctermbg=darkgray ctermfg=NONE cterm=NONE
+    hi TabLineFill ctermbg=NONE ctermfg=NONE cterm=NONE
     hi TabLineSel ctermbg=NONE ctermfg=white cterm=NONE
     hi Title ctermbg=NONE ctermfg=white cterm=NONE
     hi CursorLine ctermbg=darkgray ctermfg=NONE cterm=NONE
@@ -195,6 +208,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi ModeMsg ctermbg=NONE ctermfg=white cterm=NONE
     hi MoreMsg ctermbg=NONE ctermfg=white cterm=NONE
     hi Question ctermbg=NONE ctermfg=white cterm=NONE
+    hi WarningMsg ctermbg=NONE ctermfg=yellow cterm=NONE
     hi Cursor ctermbg=NONE ctermfg=white cterm=NONE
     hi CursorColumn ctermbg=NONE ctermfg=white cterm=NONE
     hi QuickFixLine ctermbg=NONE ctermfg=white cterm=NONE
@@ -226,6 +240,18 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi TabLineTitleActive ctermbg=NONE ctermfg=blue cterm=bold
     hi ErrorStrong ctermbg=darkgray ctermfg=red cterm=bold
     hi WarningStrong ctermbg=darkgray ctermfg=yellow cterm=bold
+    hi DiagnosticError ctermbg=NONE ctermfg=red cterm=NONE
+    hi DiagnosticWarn ctermbg=NONE ctermfg=yellow cterm=NONE
+    hi DiagnosticInfo ctermbg=NONE ctermfg=cyan cterm=NONE
+    hi DiagnosticHint ctermbg=NONE ctermfg=darkgray cterm=NONE
+    hi DiagnosticUnderlineError ctermbg=NONE ctermfg=NONE cterm=undercurl
+    hi DiagnosticUnderlineWarn ctermbg=NONE ctermfg=NONE cterm=undercurl
+    hi DiagnosticUnderlineInfo ctermbg=NONE ctermfg=NONE cterm=undercurl
+    hi DiagnosticUnderlineHint ctermbg=NONE ctermfg=NONE cterm=undercurl
+    hi DiagnosticVirtualTextError ctermbg=red ctermfg=red cterm=NONE
+    hi DiagnosticVirtualTextWarn ctermbg=yellow ctermfg=yellow cterm=NONE
+    hi DiagnosticVirtualTextInfo ctermbg=cyan ctermfg=cyan cterm=NONE
+    hi DiagnosticVirtualTextHint ctermbg=NONE ctermfg=darkgray cterm=NONE
     hi CocExplorerGitPathChange ctermbg=NONE ctermfg=green cterm=NONE
     hi CocExplorerGitContentChange ctermbg=NONE ctermfg=yellow cterm=NONE
     hi SignifySignAdd ctermbg=NONE ctermfg=green cterm=NONE
@@ -271,7 +297,6 @@ hi link EndOfBuffer NonText
 hi link Number Constant
 hi link StatusLineTerm StatusLine
 hi link StatusLineTermNC StatusLineNC
-hi link WarningMsg Error
 hi link CursorIM Cursor
 hi link Terminal Normal
 hi link configfunction Normal
