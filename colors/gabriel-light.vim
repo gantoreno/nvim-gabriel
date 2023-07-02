@@ -2,7 +2,7 @@
 " Author:      Gabriel Antonio (gantoreno@gmail.com)
 " Webpage:     http://www.github.com/gantoreno/nvim-gabriel
 " Description: Gabriel's (me) personal color scheme, now on Neovim
-" Last Change: 2023-07-01
+" Last Change: 2023-07-02
 
 hi clear
 
@@ -473,6 +473,34 @@ hi link @lsp.type.variable @variable
 hi link @lsp.type.namespace @type.builtin
 hi link @lsp.type.class @type.builtin
 hi link @lsp.type.interface @type.builtin
+hi link NavicIconsFile Directory
+hi link NavicIconsModule Constant
+hi link NavicIconsNamespace WarningMsg
+hi link NavicIconsPackage Error
+hi link NavicIconsClass Constant
+hi link NavicIconsMethod String
+hi link NavicIconsProperty WarningMsg
+hi link NavicIconsField Constant
+hi link NavicIconsConstructor WarningMsg
+hi link NavicIconsEnum String
+hi link NavicIconsInterface String
+hi link NavicIconsFunction String
+hi link NavicIconsVariable Constant
+hi link NavicIconsConstant Identifier
+hi link NavicIconsString String
+hi link NavicIconsNumber Constant
+hi link NavicIconsBoolean Constant
+hi link NavicIconsArray String
+hi link NavicIconsObject WarningMsg
+hi link NavicIconsKey WarningMsg
+hi link NavicIconsNull Constant
+hi link NavicIconsEnumMember Constant
+hi link NavicIconsStruct Constant
+hi link NavicIconsEvent WarningMsg
+hi link NavicIconsOperator Operator
+hi link NavicIconsTypeParameter Type
+hi link NavicText Directory
+hi link NavicSeparator Directory
 
 let g:terminal_ansi_colors = [ '#000000', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#CCCCCC', '#444444', '#884444', '#779966', '#AA8844', '#447799', '#666699', '#449999', '#FFFFFF', ]
 
