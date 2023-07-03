@@ -9,8 +9,8 @@
 Gabriel's (me) personal Neovim colorscheme.
 
 <div align="center">
-  <img src=".github/gabriel-light.png#gh-light-mode-only" />
-  <img src=".github/gabriel-dark.png#gh-dark-mode-only" />
+  <img src=".github/nvim-gabriel-light.png#gh-light-mode-only" />
+  <img src=".github/nvim-gabriel-dark.png#gh-dark-mode-only" />
 </div>
 
 ## Usage
