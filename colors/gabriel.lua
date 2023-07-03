@@ -446,8 +446,8 @@ local highlights = {
   ["DiagnosticVirtualTextWarn"] = { bg = faded_colors.yellow, fg = colors.yellow },
   ["DiagnosticVirtualTextInfo"] = { bg = faded_colors.cyan, fg = colors.cyan },
   ["DiagnosticVirtualTextHint"] = { fg = grayscale.gray9 },
-  ["LspInfoBorder"] = { Link = 'FloatBorder' },
-  ["NullLsInfoBorder"] = { Link = 'FloatBorder' },
+  ["LspInfoBorder"] = { link = 'FloatBorder' },
+  ["NullLsInfoBorder"] = { link = 'FloatBorder' },
 
   -- Navic
   ['NavicIconsFile'] = { link = 'Directory' },
