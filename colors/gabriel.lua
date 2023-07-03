@@ -48,46 +48,46 @@ local ui = {
 }
 
 if vim.o.background == 'dark' then
-  colors.black       = '#000000'
-  colors.darkred     = '#aa6666'
-  colors.darkgreen   = '#99bb88'
-  colors.darkyellow  = '#ccaa66'
-  colors.darkblue    = '#6699bb'
-  colors.darkmagenta = '#8888bb'
-  colors.darkcyan    = '#66bbbb'
-  colors.gray        = '#cccccc'
-  colors.darkgray    = '#444444'
-  colors.red         = '#aa6666'
-  colors.green       = '#99bb88'
-  colors.yellow      = '#ccaa66'
-  colors.blue        = '#6699bb'
-  colors.magenta     = '#8888bb'
-  colors.cyan        = '#66bbbb'
-  colors.white       = '#ffffff'
+  colors.black        = '#000000'
+  colors.darkred      = '#aa6666'
+  colors.darkgreen    = '#99bb88'
+  colors.darkyellow   = '#ccaa66'
+  colors.darkblue     = '#6699bb'
+  colors.darkmagenta  = '#8888bb'
+  colors.darkcyan     = '#66bbbb'
+  colors.gray         = '#cccccc'
+  colors.darkgray     = '#444444'
+  colors.red          = '#aa6666'
+  colors.green        = '#99bb88'
+  colors.yellow       = '#ccaa66'
+  colors.blue         = '#6699bb'
+  colors.magenta      = '#8888bb'
+  colors.cyan         = '#66bbbb'
+  colors.white        = '#ffffff'
 
   faded_colors.red    = "#2e2323"
   faded_colors.yellow = "#363024"
   faded_colors.cyan   = "#273333"
 
-  grayscale.gray0  = '#000000'
-  grayscale.gray1  = '#111111'
-  grayscale.gray2  = '#222222'
-  grayscale.gray3  = '#333333'
-  grayscale.gray4  = '#444444'
-  grayscale.gray5  = '#555555'
-  grayscale.gray6  = '#666666'
-  grayscale.gray7  = '#777777'
-  grayscale.gray8  = '#888888'
-  grayscale.gray9  = '#999999'
-  grayscale.gray10 = '#aaaaaa'
-  grayscale.gray11 = '#bbbbbb'
-  grayscale.gray12 = '#cccccc'
-  grayscale.gray13 = '#dddddd'
-  grayscale.gray14 = '#eeeeee'
-  grayscale.gray15 = '#ffffff'
+  grayscale.gray0     = '#000000'
+  grayscale.gray1     = '#111111'
+  grayscale.gray2     = '#222222'
+  grayscale.gray3     = '#333333'
+  grayscale.gray4     = '#444444'
+  grayscale.gray5     = '#555555'
+  grayscale.gray6     = '#666666'
+  grayscale.gray7     = '#777777'
+  grayscale.gray8     = '#888888'
+  grayscale.gray9     = '#999999'
+  grayscale.gray10    = '#aaaaaa'
+  grayscale.gray11    = '#bbbbbb'
+  grayscale.gray12    = '#cccccc'
+  grayscale.gray13    = '#dddddd'
+  grayscale.gray14    = '#eeeeee'
+  grayscale.gray15    = '#ffffff'
 
-  ui.background = '#111111'
-  ui.foreground = '#ffffff'
+  ui.background       = '#111111'
+  ui.foreground       = '#ffffff'
 end
 
 local highlights = {
@@ -159,7 +159,7 @@ local highlights = {
   ['StatusWarning'] = { fg = colors.yellow, bold = true },
   ['String'] = { fg = colors.blue },
   ['TabLine'] = { fg = grayscale.gray11 },
-  ['TabLineFill'] =  {},
+  ['TabLineFill'] = {},
   ['TabLineSel'] = { fg = ui.foreground },
   ['TabLineTitle'] = { fg = grayscale.gray9 },
   ['TabLineTitleActive'] = { fg = colors.blue, bold = true },
@@ -319,7 +319,7 @@ local highlights = {
 
   -- Telescope
   ['TelescopeBorder'] = { link = 'FloatBorder' },
-  ['TelescopePromptBorder'] = { link =  'FloatBorder' },
+  ['TelescopePromptBorder'] = { link = 'FloatBorder' },
   ['TelescopeResultsBorder'] = { link = 'FloatBorder' },
   ['TelescopePreviewBorder'] = { link = 'FloatBorder' },
 
@@ -380,7 +380,7 @@ local highlights = {
   ['@namespace'] = { link = 'String' },
   ['@parameter'] = { link = 'Normal' },
   ['@property'] = { fg = ui.foreground },
-  ['@property.css'] = { link = 'String'},
+  ['@property.css'] = { link = 'String' },
   ['@punctuation.bracket'] = { fg = ui.foreground },
   ['@punctuation.delimiter'] = { link = 'Normal' },
   ['@punctuation.delimiter.astro'] = { link = 'Comment' },
@@ -449,14 +449,14 @@ local highlights = {
   ['NavicIconsPackage'] = { link = 'Error' },
   ['NavicIconsClass'] = { link = 'Constant' },
   ['NavicIconsMethod'] = { link = 'String' },
-  ['NavicIconsProperty'] = { link = 'WarningMsg' },
+  ['NavicIconsProperty'] = { link = 'Comment' },
   ['NavicIconsField'] = { link = 'Constant' },
   ['NavicIconsConstructor'] = { link = 'WarningMsg' },
   ['NavicIconsEnum'] = { link = 'String' },
   ['NavicIconsInterface'] = { link = 'String' },
   ['NavicIconsFunction'] = { link = 'String' },
   ['NavicIconsVariable'] = { link = 'Constant' },
-  ['NavicIconsConstant'] = { link = 'Identifier' },
+  ['NavicIconsConstant'] = { link = 'String' },
   ['NavicIconsString'] = { link = 'String' },
   ['NavicIconsNumber'] = { link = 'Constant' },
   ['NavicIconsBoolean'] = { link = 'Constant' },
@@ -503,4 +503,3 @@ vim.g.terminal_color_14 = colors.cyan
 
 vim.g.terminal_color_7 = colors.gray
 vim.g.terminal_color_15 = colors.white
-
