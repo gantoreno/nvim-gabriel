@@ -4,7 +4,7 @@
 
 # Vim Gabriel
 
-![https://img.shields.io/github/issues/gantoreno/vim-gabriel](https://img.shields.io/github/issues/gantoreno/vim-gabriel) ![https://img.shields.io/github/forks/gantoreno/vim-gabriel](https://img.shields.io/github/forks/gantoreno/vim-gabriel) ![https://img.shields.io/github/stars/gantoreno/vim-gabriel](https://img.shields.io/github/stars/gantoreno/vim-gabriel) ![https://img.shields.io/github/license/gantoreno/vim-gabriel](https://img.shields.io/github/license/gantoreno/vim-gabriel) ![https://raw.githubusercontent.com/sindresorhus/awesome/main/media/badge.svg](https://raw.githubusercontent.com/sindresorhus/awesome/main/media/badge.svg)
+![https://img.shields.io/github/issues/gantoreno/nvim-gabriel](https://img.shields.io/github/issues/gantoreno/nvim-gabriel) ![https://img.shields.io/github/forks/gantoreno/nvim-gabriel](https://img.shields.io/github/forks/gantoreno/nvim-gabriel) ![https://img.shields.io/github/stars/gantoreno/nvim-gabriel](https://img.shields.io/github/stars/gantoreno/nvim-gabriel) ![https://img.shields.io/github/license/gantoreno/nvim-gabriel](https://img.shields.io/github/license/gantoreno/nvim-gabriel) ![https://raw.githubusercontent.com/sindresorhus/awesome/main/media/badge.svg](https://raw.githubusercontent.com/sindresorhus/awesome/main/media/badge.svg)
 
 Gabriel's (me) personal Neovim colorscheme.
 
@@ -36,7 +36,7 @@ This are the languages I've already implemented proper highlighting for:
 - HTML
 - JSON
 
-There are more languages coming in soon (see [Contributing](https://github.com/gantoreno/vim-gabriel#contributing)).
+There are more languages coming in soon (see [Contributing](https://github.com/gantoreno/nvim-gabriel#contributing)).
 
 ## Contributing
 
