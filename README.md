@@ -6,7 +6,7 @@
 
 ![https://img.shields.io/github/issues/gantoreno/vim-gabriel](https://img.shields.io/github/issues/gantoreno/vim-gabriel) ![https://img.shields.io/github/forks/gantoreno/vim-gabriel](https://img.shields.io/github/forks/gantoreno/vim-gabriel) ![https://img.shields.io/github/stars/gantoreno/vim-gabriel](https://img.shields.io/github/stars/gantoreno/vim-gabriel) ![https://img.shields.io/github/license/gantoreno/vim-gabriel](https://img.shields.io/github/license/gantoreno/vim-gabriel) ![https://raw.githubusercontent.com/sindresorhus/awesome/main/media/badge.svg](https://raw.githubusercontent.com/sindresorhus/awesome/main/media/badge.svg)
 
-Gabriel's (me) personal Vim & Neovim colorscheme.
+Gabriel's (me) personal Neovim colorscheme.
 
 <div align="center">
   <img src=".github/gabriel-light.png#gh-light-mode-only" />
@@ -15,25 +15,13 @@ Gabriel's (me) personal Vim & Neovim colorscheme.
 
 ## Usage
 
-Set the colorscheme inside `.vimrc` or `init.vim`:
+Set the colorscheme inside `init.lua`:
 
-```vim
-colorscheme gabriel-light " For light mode
-colorscheme gabriel-dark " For dark mode
+```lua
+vim.cmd.colorscheme('gabriel')
 ```
 
-On terminal emulators, make sure to set Vim to use `truecolor` in order for Gabriel to work as expected:
-
-```vim
-set termguicolors
-```
-
-To build and test the theme locally, use Make:
-
-```sh
-$ make # Or...
-$ make watch # To get hot reload, just make sure to pip install when-changed
-```
+To switch between light/dark variants, use the `vim.o.background` option. Note that the colorscheme requires `termguicolors` in order to properly display colors.
 
 ## Supported languages
 
@@ -52,13 +40,7 @@ There are more languages coming in soon (see [Contributing](https://github.com/g
 
 ## Contributing
 
-As you might know, maintaining a Vim colorscheme is no easy task. There are a lot of syntax highlighting libraries out there which all do slightly different things. Also, ever heard of [TreeSitter](https://tree-sitter.github.io/tree-sitter/)?
-
 If you like the colorscheme, and you'd like to help me on making it even better, feel free to open pull requests adding more features. You can use my [VSCode theme](https://github.com/gantoreno/vscode-gabriel) as a guide on how things should look and feel for every language. I'll be glad to receive any kind of support regarding development!
-
-## Credits
-
-Special thanks to [Roman Lafourcade](https://github.com/romainl) for [Vim-RNB](https://github.com/romainl/vim-rnb), an amazing tool to create vim colorschemes with the Ruby language, made 100% easier the start of this project.
 
 ## License
 
