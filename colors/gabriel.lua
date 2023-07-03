@@ -1,3 +1,8 @@
+local g = vim.g
+
+local api = vim.api
+local cmd = vim.cmd
+
 local colors = {
   black       = '#000000',
   darkred     = '#884444',
@@ -473,33 +478,33 @@ local highlights = {
   ['NavicSeparator'] = { link = 'Directory' },
 }
 
-vim.cmd('hi clear')
-vim.cmd('syntax reset')
+cmd('hi clear')
+cmd('syntax reset')
 
 for group, highlight in pairs(highlights) do
-  vim.api.nvim_set_hl(0, group, highlight)
+  api.nvim_set_hl(0, group, highlight)
 end
 
-vim.g.terminal_color_0 = colors.black
-vim.g.terminal_color_8 = colors.darkgray
+g.terminal_color_0 = colors.black
+g.terminal_color_8 = colors.darkgray
 
-vim.g.terminal_color_1 = colors.darkred
-vim.g.terminal_color_9 = colors.red
+g.terminal_color_1 = colors.darkred
+g.terminal_color_9 = colors.red
 
-vim.g.terminal_color_2 = colors.darkgreen
-vim.g.terminal_color_10 = colors.green
+g.terminal_color_2 = colors.darkgreen
+g.terminal_color_10 = colors.green
 
-vim.g.terminal_color_3 = colors.darkyellow
-vim.g.terminal_color_11 = colors.yellow
+g.terminal_color_3 = colors.darkyellow
+g.terminal_color_11 = colors.yellow
 
-vim.g.terminal_color_4 = colors.darkblue
-vim.g.terminal_color_12 = colors.blue
+g.terminal_color_4 = colors.darkblue
+g.terminal_color_12 = colors.blue
 
-vim.g.terminal_color_5 = colors.darkmagenta
-vim.g.terminal_color_13 = colors.magenta
+g.terminal_color_5 = colors.darkmagenta
+g.terminal_color_13 = colors.magenta
 
-vim.g.terminal_color_6 = colors.darkcyan
-vim.g.terminal_color_14 = colors.cyan
+g.terminal_color_6 = colors.darkcyan
+g.terminal_color_14 = colors.cyan
 
-vim.g.terminal_color_7 = colors.gray
-vim.g.terminal_color_15 = colors.white
+g.terminal_color_7 = colors.gray
+g.terminal_color_15 = colors.white
