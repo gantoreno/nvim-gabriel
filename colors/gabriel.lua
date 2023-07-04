@@ -372,7 +372,7 @@ local highlights = {
   -- CMP
   ['CmpItemAbbr'] = { fg = grayscale.gray9 },
   ['CmpItemAbbrMatch'] = { fg = ui.foreground, bold = true },
-  ['CmpItemKind'] = { fg = ui.foreground },
+  ['CmpItemKind'] = { fg = grayscale.gray9 },
 
   -- TreeSitter
   ['@attribute'] = { link = 'Constant' },
