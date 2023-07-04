@@ -193,7 +193,15 @@ local highlights = {
   ['vimMapMod'] = { fg = colors.blue },
   ['vimMapModKey'] = { fg = colors.blue },
   ['vimNotation'] = { fg = colors.magenta },
-  ['vimVar'] = { fg = colors.magenta },
+  ['vimvar'] = { fg = colors.magenta },
+
+  -- UI
+  ['UIBlockRed'] = { bg = colors.red, fg = colors.white },
+  ['UIBlockGreen'] = { bg = colors.green, fg = colors.white },
+  ['UIBlockYellow'] = { bg = colors.yellow, fg = colors.white },
+  ['UIBlockBlue'] = { bg = colors.blue, fg = colors.white },
+  ['UIBlockMagenta'] = { bg = colors.magenta, fg = colors.white },
+  ['UIBlockCyan'] = { bg = colors.cyan, fg = colors.white },
 
   -- Config
   ['configfunction'] = { link = 'Normal' },
@@ -459,8 +467,8 @@ local highlights = {
   ['NavicIconsConstructor'] = { link = 'WarningMsg' },
   ['NavicIconsEnum'] = { link = 'String' },
   ['NavicIconsInterface'] = { link = 'String' },
-  ['NavicIconsFunction'] = { link = 'String' },
-  ['NavicIconsVariable'] = { link = 'Constant' },
+  ['NavicIconsFunction'] = { link = 'Constant' },
+  ['NavicIconsVariable'] = { link = 'String' },
   ['NavicIconsConstant'] = { link = 'String' },
   ['NavicIconsString'] = { link = 'String' },
   ['NavicIconsNumber'] = { link = 'Constant' },
