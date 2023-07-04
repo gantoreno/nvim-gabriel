@@ -118,7 +118,7 @@ local highlights = {
   ['Error'] = { fg = colors.red },
   ['ErrorMsg'] = { fg = ui.foreground },
   ['ErrorStrong'] = { bg = grayscale.gray2, fg = colors.red, bold = true },
-  ['FloatBorder'] = { fg = grayscale.gray6 },
+  ['FloatBorder'] = { fg = grayscale.gray3 },
   ['FoldColumn'] = { fg = ui.foreground },
   ['Folded'] = { fg = ui.foreground },
   ['Foreground'] = { fg = ui.foreground },
