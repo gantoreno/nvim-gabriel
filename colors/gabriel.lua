@@ -329,6 +329,9 @@ local highlights = {
   ['SignifySignDelete'] = { fg = colors.red },
   ['SignifySignChange'] = { fg = colors.yellow },
 
+  -- Gitsigns
+  ['GitSignsCurrentLineBlame'] = { link = 'Comment' },
+
   -- Telescope
   ['TelescopeBorder'] = { link = 'FloatBorder' },
   ['TelescopePromptBorder'] = { link = 'FloatBorder' },
