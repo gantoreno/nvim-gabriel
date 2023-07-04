@@ -4,41 +4,41 @@ local api = vim.api
 local cmd = vim.cmd
 
 local colors = {
-  black       = '#000000',
-  darkred     = '#884444',
-  darkgreen   = '#779966',
-  darkyellow  = '#AA8844',
-  darkblue    = '#447799',
+  black = '#000000',
+  darkred = '#884444',
+  darkgreen = '#779966',
+  darkyellow = '#AA8844',
+  darkblue = '#447799',
   darkmagenta = '#666699',
-  darkcyan    = '#449999',
-  gray        = '#CCCCCC',
-  darkgray    = '#444444',
-  red         = '#884444',
-  green       = '#779966',
-  yellow      = '#AA8844',
-  blue        = '#447799',
-  magenta     = '#666699',
-  cyan        = '#449999',
-  white       = '#FFFFFF',
+  darkcyan = '#449999',
+  gray = '#CCCCCC',
+  darkgray = '#444444',
+  red = '#884444',
+  green = '#779966',
+  yellow = '#AA8844',
+  blue = '#447799',
+  magenta = '#666699',
+  cyan = '#449999',
+  white = '#FFFFFF',
 }
 
 local faded_colors = {
-  red    = '#d7cccc',
+  red = '#d7cccc',
   yellow = '#dfd9ce',
-  cyan   = '#d0dcdc',
+  cyan = '#d0dcdc',
 }
 
 local grayscale = {
-  gray0  = '#ffffff',
-  gray1  = '#eeeeee',
-  gray2  = '#dddddd',
-  gray3  = '#cccccc',
-  gray4  = '#bbbbbb',
-  gray5  = '#aaaaaa',
-  gray6  = '#999999',
-  gray7  = '#888888',
-  gray8  = '#777777',
-  gray9  = '#666666',
+  gray0 = '#ffffff',
+  gray1 = '#eeeeee',
+  gray2 = '#dddddd',
+  gray3 = '#cccccc',
+  gray4 = '#bbbbbb',
+  gray5 = '#aaaaaa',
+  gray6 = '#999999',
+  gray7 = '#888888',
+  gray8 = '#777777',
+  gray9 = '#666666',
   gray10 = '#555555',
   gray11 = '#444444',
   gray12 = '#333333',
@@ -53,46 +53,46 @@ local ui = {
 }
 
 if vim.o.background == 'dark' then
-  colors.black        = '#000000'
-  colors.darkred      = '#aa6666'
-  colors.darkgreen    = '#99bb88'
-  colors.darkyellow   = '#ccaa66'
-  colors.darkblue     = '#6699bb'
-  colors.darkmagenta  = '#8888bb'
-  colors.darkcyan     = '#66bbbb'
-  colors.gray         = '#cccccc'
-  colors.darkgray     = '#444444'
-  colors.red          = '#aa6666'
-  colors.green        = '#99bb88'
-  colors.yellow       = '#ccaa66'
-  colors.blue         = '#6699bb'
-  colors.magenta      = '#8888bb'
-  colors.cyan         = '#66bbbb'
-  colors.white        = '#ffffff'
+  colors.black = '#000000'
+  colors.darkred = '#aa6666'
+  colors.darkgreen = '#99bb88'
+  colors.darkyellow = '#ccaa66'
+  colors.darkblue = '#6699bb'
+  colors.darkmagenta = '#8888bb'
+  colors.darkcyan = '#66bbbb'
+  colors.gray = '#cccccc'
+  colors.darkgray = '#444444'
+  colors.red = '#aa6666'
+  colors.green = '#99bb88'
+  colors.yellow = '#ccaa66'
+  colors.blue = '#6699bb'
+  colors.magenta = '#8888bb'
+  colors.cyan = '#66bbbb'
+  colors.white = '#ffffff'
 
-  faded_colors.red    = '#2e2323'
+  faded_colors.red = '#2e2323'
   faded_colors.yellow = '#363024'
-  faded_colors.cyan   = '#273333'
+  faded_colors.cyan = '#273333'
 
-  grayscale.gray0     = '#000000'
-  grayscale.gray1     = '#111111'
-  grayscale.gray2     = '#222222'
-  grayscale.gray3     = '#333333'
-  grayscale.gray4     = '#444444'
-  grayscale.gray5     = '#555555'
-  grayscale.gray6     = '#666666'
-  grayscale.gray7     = '#777777'
-  grayscale.gray8     = '#888888'
-  grayscale.gray9     = '#999999'
-  grayscale.gray10    = '#aaaaaa'
-  grayscale.gray11    = '#bbbbbb'
-  grayscale.gray12    = '#cccccc'
-  grayscale.gray13    = '#dddddd'
-  grayscale.gray14    = '#eeeeee'
-  grayscale.gray15    = '#ffffff'
+  grayscale.gray0 = '#000000'
+  grayscale.gray1 = '#111111'
+  grayscale.gray2 = '#222222'
+  grayscale.gray3 = '#333333'
+  grayscale.gray4 = '#444444'
+  grayscale.gray5 = '#555555'
+  grayscale.gray6 = '#666666'
+  grayscale.gray7 = '#777777'
+  grayscale.gray8 = '#888888'
+  grayscale.gray9 = '#999999'
+  grayscale.gray10 = '#aaaaaa'
+  grayscale.gray11 = '#bbbbbb'
+  grayscale.gray12 = '#cccccc'
+  grayscale.gray13 = '#dddddd'
+  grayscale.gray14 = '#eeeeee'
+  grayscale.gray15 = '#ffffff'
 
-  ui.background       = '#111111'
-  ui.foreground       = '#ffffff'
+  ui.background = '#111111'
+  ui.foreground = '#ffffff'
 end
 
 local highlights = {
@@ -412,7 +412,6 @@ local highlights = {
   ['@text.title.6.marker.markdown'] = { fg = colors.blue, bold = true },
   ['@text.uri'] = { fg = ui.foreground, underline = true },
   ['@type'] = { link = 'Normal' },
-  ['@type.builtin'] = { link = 'String' },
   ['@type.builtin'] = { link = 'String' },
   ['@type.cpp'] = { link = 'String' },
   ['@type.css'] = { link = 'String' },
