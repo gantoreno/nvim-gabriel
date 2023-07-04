@@ -23,9 +23,9 @@ local colors = {
 }
 
 local faded_colors = {
-  red    = "#d7cccc",
-  yellow = "#dfd9ce",
-  cyan   = "#d0dcdc",
+  red    = '#d7cccc',
+  yellow = '#dfd9ce',
+  cyan   = '#d0dcdc',
 }
 
 local grayscale = {
@@ -70,9 +70,9 @@ if vim.o.background == 'dark' then
   colors.cyan         = '#66bbbb'
   colors.white        = '#ffffff'
 
-  faded_colors.red    = "#2e2323"
-  faded_colors.yellow = "#363024"
-  faded_colors.cyan   = "#273333"
+  faded_colors.red    = '#2e2323'
+  faded_colors.yellow = '#363024'
+  faded_colors.cyan   = '#273333'
 
   grayscale.gray0     = '#000000'
   grayscale.gray1     = '#111111'
@@ -433,20 +433,20 @@ local highlights = {
   ['@lsp.type.namespace'] = { link = '@type.builtin' },
   ['@lsp.type.class'] = { link = '@type.builtin' },
   ['@lsp.type.interface'] = { link = '@type.builtin' },
-  ["DiagnosticError"] = { fg = colors.red },
-  ["DiagnosticWarn"] = { fg = colors.yellow },
-  ["DiagnosticInfo"] = { fg = colors.cyan },
-  ["DiagnosticHint"] = { fg = grayscale.gray9 },
-  ["DiagnosticUnderlineError"] = { undercurl = true, sp = colors.red },
-  ["DiagnosticUnderlineWarn"] = { undercurl = true, sp = colors.yellow },
-  ["DiagnosticUnderlineInfo"] = { undercurl = true, sp = colors.cyan },
-  ["DiagnosticUnderlineHint"] = { undercurl = true, sp = grayscale.gray9 },
-  ["DiagnosticVirtualTextError"] = { bg = faded_colors.red, fg = colors.red },
-  ["DiagnosticVirtualTextWarn"] = { bg = faded_colors.yellow, fg = colors.yellow },
-  ["DiagnosticVirtualTextInfo"] = { bg = faded_colors.cyan, fg = colors.cyan },
-  ["DiagnosticVirtualTextHint"] = { fg = grayscale.gray9 },
-  ["LspInfoBorder"] = { link = 'FloatBorder' },
-  ["NullLsInfoBorder"] = { link = 'FloatBorder' },
+  ['DiagnosticError'] = { fg = colors.red },
+  ['DiagnosticWarn'] = { fg = colors.yellow },
+  ['DiagnosticInfo'] = { fg = colors.cyan },
+  ['DiagnosticHint'] = { fg = grayscale.gray9 },
+  ['DiagnosticUnderlineError'] = { undercurl = true, sp = colors.red },
+  ['DiagnosticUnderlineWarn'] = { undercurl = true, sp = colors.yellow },
+  ['DiagnosticUnderlineInfo'] = { undercurl = true, sp = colors.cyan },
+  ['DiagnosticUnderlineHint'] = { undercurl = true, sp = grayscale.gray9 },
+  ['DiagnosticVirtualTextError'] = { bg = faded_colors.red, fg = colors.red },
+  ['DiagnosticVirtualTextWarn'] = { bg = faded_colors.yellow, fg = colors.yellow },
+  ['DiagnosticVirtualTextInfo'] = { bg = faded_colors.cyan, fg = colors.cyan },
+  ['DiagnosticVirtualTextHint'] = { fg = grayscale.gray9 },
+  ['LspInfoBorder'] = { link = 'FloatBorder' },
+  ['NullLsInfoBorder'] = { link = 'FloatBorder' },
 
   -- Navic
   ['NavicIconsFile'] = { link = 'Directory' },
