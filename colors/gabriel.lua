@@ -231,7 +231,6 @@ local highlights = {
   ['jsClassDefinition'] = { link = 'Constant' },
   ['jsDecoratorFunction'] = { link = 'Normal' },
   ['jsDestructuringBlock'] = { link = 'Constant' },
-  ['javaScriptNull'] = { link = 'Constant' },
   ['javaScriptBraces'] = { link = 'Normal' },
   ['javaScriptNull'] = { link = 'Constant' },
 
