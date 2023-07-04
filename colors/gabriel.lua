@@ -350,7 +350,6 @@ local highlights = {
   -- NvimTree
   ['NvimtreeNormal'] = { link = 'Directory' },
   ['NvimTreeFolderIcon'] = { link = 'Directory' },
-  ['NvimTreeFolderIcon'] = { link = 'Directory' },
   ['NvimTreeIndentMarker'] = { link = 'Directory' },
   ['NvimTreeRootFolder'] = { link = 'Directory' },
   ['NvimTreeGitDirty'] = { link = 'CocExplorerGitContentChange' },
@@ -358,6 +357,7 @@ local highlights = {
   ['NvimTreeGitRenamed'] = { link = 'CocExplorerGitContentChange' },
   ['NvimTreeGitNew'] = { link = 'CocExplorerGitPathChange' },
   ['NvimTreeGitDeleted'] = { link = 'CocExplorerGitContentChange' },
+  ['NvimTreeSymlink'] = { link = 'Directory' },
 
   -- Floaterm
   ['FloatermBorder'] = { link = 'FloatBorder' },
