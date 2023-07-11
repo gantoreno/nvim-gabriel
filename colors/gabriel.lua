@@ -435,6 +435,8 @@ local highlights = {
 
   -- LSP
   ['@lsp.type.property'] = { link = '@type' },
+  ['@lsp.type.enum'] = { link = '@constant.builtin' },
+  ['@lsp.type.enumMember'] = { link = '@text.literal' },
   ['@lsp.type.method'] = { link = '@method' },
   ['@lsp.type.type'] = { link = '@type.builtin' },
   ['@lsp.type.parameter'] = { link = '@parameter' },
