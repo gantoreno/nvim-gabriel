@@ -387,6 +387,7 @@ local highlights = {
   ['@field'] = { fg = ui.foreground },
   ['@function'] = { link = 'Constant' },
   ['@function.builtin'] = { link = 'Identifier' },
+  ['@function.builtin.python'] = { link = 'String' },
   ['@function.call'] = { link = 'Constant' },
   ['@label'] = { fg = ui.foreground },
   ['@method'] = { link = 'Constant' },
