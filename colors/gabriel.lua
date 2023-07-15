@@ -446,6 +446,7 @@ local highlights = {
   ['@lsp.type.namespace'] = { link = '@type.builtin' },
   ['@lsp.type.class'] = { link = '@type.builtin' },
   ['@lsp.type.interface'] = { link = '@type.builtin' },
+  ['@lsp.typemod.typeParameter'] = { link = 'string' },
   ['DiagnosticError'] = { fg = colors.red },
   ['DiagnosticWarn'] = { fg = colors.yellow },
   ['DiagnosticInfo'] = { fg = colors.cyan },
