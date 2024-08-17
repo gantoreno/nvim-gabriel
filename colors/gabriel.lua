@@ -74,12 +74,12 @@ local highlights = {
   ['StatusLineNC'] = { fg = grayscale.gray9 },
   ['StatusLineTerm'] = { link = 'StatusLine' },
   ['StatusLineTermNC'] = { link = 'StatusLineNC' },
-  ['StatusText'] = { fg = colors.white },
+  ['StatusText'] = { fg = ui.foreground },
   ['StatusWarning'] = { fg = colors.yellow, bold = true },
   ['String'] = { fg = colors.blue },
-  ['TabLine'] = { fg = grayscale.gray11 },
-  ['TabLineFill'] = {},
-  ['TabLineSel'] = { fg = ui.foreground },
+  ['TabLine'] = { fg = grayscale.gray11, bg = grayscale.gray2 },
+  ['TabLineFill'] = { bg = grayscale.gray2 },
+  ['TabLineSel'] = { fg = ui.foreground, bg = grayscale.gray3 },
   ['TabLineTitle'] = { fg = grayscale.gray9 },
   ['TabLineTitleActive'] = { fg = colors.blue, bold = true },
   ['Terminal'] = { link = 'Normal' },
@@ -93,7 +93,7 @@ local highlights = {
   ['VimAutoEvent'] = { fg = colors.blue },
   ['VimFunction'] = { fg = colors.magenta },
   ['VimHiGroup'] = { fg = colors.blue },
-  ['VimVar'] = { fg = colors.white },
+  ['VimVar'] = { fg = ui.foreground },
   ['Visual'] = { bg = grayscale.gray2 },
   ['VisualNOS'] = { bg = grayscale.gray2 },
   ['WarningMsg'] = { fg = colors.yellow },
@@ -110,12 +110,12 @@ local highlights = {
   ['vimvar'] = { fg = colors.magenta },
 
   -- UI
-  ['UIBlockRed'] = { bg = colors.red, fg = colors.white },
-  ['UIBlockGreen'] = { bg = colors.green, fg = colors.white },
-  ['UIBlockYellow'] = { bg = colors.yellow, fg = colors.white },
-  ['UIBlockBlue'] = { bg = colors.blue, fg = colors.white },
-  ['UIBlockMagenta'] = { bg = colors.magenta, fg = colors.white },
-  ['UIBlockCyan'] = { bg = colors.cyan, fg = colors.white },
+  ['UIBlockRed'] = { bg = colors.red, fg = ui.foreground },
+  ['UIBlockGreen'] = { bg = colors.green, fg = ui.foreground },
+  ['UIBlockYellow'] = { bg = colors.yellow, fg = ui.foreground },
+  ['UIBlockBlue'] = { bg = colors.blue, fg = ui.foreground },
+  ['UIBlockMagenta'] = { bg = colors.magenta, fg = ui.foreground },
+  ['UIBlockCyan'] = { bg = colors.cyan, fg = ui.foreground },
 
   -- Config
   ['configfunction'] = { link = 'Normal' },
@@ -294,6 +294,7 @@ local highlights = {
   ['CmpItemKind'] = { fg = grayscale.gray9 },
 
   -- TreeSitter
+  ['TreeSitterContext'] = { link = 'Visual' },
   ['@attribute'] = { link = 'Constant' },
   ['@comment'] = { link = 'Comment' },
   ['@comment.documentation'] = { link = 'Comment' },
