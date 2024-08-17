@@ -3,97 +3,10 @@ local g = vim.g
 local api = vim.api
 local cmd = vim.cmd
 
-local colors = {
-  black = '#000000',
-  darkred = '#884444',
-  darkgreen = '#779966',
-  darkyellow = '#AA8844',
-  darkblue = '#447799',
-  darkmagenta = '#666699',
-  darkcyan = '#449999',
-  gray = '#CCCCCC',
-  darkgray = '#444444',
-  red = '#884444',
-  green = '#779966',
-  yellow = '#AA8844',
-  blue = '#447799',
-  magenta = '#666699',
-  cyan = '#449999',
-  white = '#FFFFFF',
-}
-
-local faded_colors = {
-  red = '#d7cccc',
-  yellow = '#dfd9ce',
-  cyan = '#d0dcdc',
-}
-
-local grayscale = {
-  gray0 = '#ffffff',
-  gray1 = '#eeeeee',
-  gray2 = '#dddddd',
-  gray3 = '#cccccc',
-  gray4 = '#bbbbbb',
-  gray5 = '#aaaaaa',
-  gray6 = '#999999',
-  gray7 = '#888888',
-  gray8 = '#777777',
-  gray9 = '#666666',
-  gray10 = '#555555',
-  gray11 = '#444444',
-  gray12 = '#333333',
-  gray13 = '#222222',
-  gray14 = '#111111',
-  gray15 = '#000000',
-}
-
-local ui = {
-  background = '#eeeeee',
-  foreground = '#000000',
-}
-
-if vim.o.background == 'dark' then
-  colors.black = '#000000'
-  colors.darkred = '#aa6666'
-  colors.darkgreen = '#99bb88'
-  colors.darkyellow = '#ccaa66'
-  colors.darkblue = '#6699bb'
-  colors.darkmagenta = '#8888bb'
-  colors.darkcyan = '#66bbbb'
-  colors.gray = '#cccccc'
-  colors.darkgray = '#444444'
-  colors.red = '#aa6666'
-  colors.green = '#99bb88'
-  colors.yellow = '#ccaa66'
-  colors.blue = '#6699bb'
-  colors.magenta = '#8888bb'
-  colors.cyan = '#66bbbb'
-  colors.white = '#ffffff'
-
-  faded_colors.red = '#2e2323'
-  faded_colors.yellow = '#363024'
-  faded_colors.cyan = '#273333'
-
-  grayscale.gray0 = '#000000'
-  grayscale.gray1 = '#111111'
-  grayscale.gray2 = '#222222'
-  grayscale.gray3 = '#333333'
-  grayscale.gray4 = '#444444'
-  grayscale.gray5 = '#555555'
-  grayscale.gray6 = '#666666'
-  grayscale.gray7 = '#777777'
-  grayscale.gray8 = '#888888'
-  grayscale.gray9 = '#999999'
-  grayscale.gray10 = '#aaaaaa'
-  grayscale.gray11 = '#bbbbbb'
-  grayscale.gray12 = '#cccccc'
-  grayscale.gray13 = '#dddddd'
-  grayscale.gray14 = '#eeeeee'
-  grayscale.gray15 = '#ffffff'
-
-  ui.background = '#111111'
-  ui.foreground = '#ffffff'
-end
+local ui = require('gabriel.palette').ui
+local colors = require('gabriel.palette').colors
+local grayscale = require('gabriel.palette').grayscale
+local faded_colors = require('gabriel.palette').faded_colors
 
 local highlights = {
   -- Initial
@@ -113,7 +26,7 @@ local highlights = {
   ['DiffChange'] = { fg = ui.foreground },
   ['DiffDelete'] = { fg = ui.foreground },
   ['DiffText'] = { fg = ui.foreground },
-  ['Directory'] = { fg = grayscale.gray11 },
+  ['Directory'] = { fg = colors.blue, bold = true },
   ['EndOfBuffer'] = { link = 'NonText' },
   ['Error'] = { fg = colors.red },
   ['ErrorMsg'] = { fg = ui.foreground },
@@ -130,8 +43,9 @@ local highlights = {
   ['ModeMsg'] = { fg = ui.foreground },
   ['MoreMsg'] = { fg = ui.foreground },
   ['NonText'] = { fg = ui.background },
-  ['NormalFloat'] = { link = 'Normal' },
+  ['NormalFloat'] = { bg = faded_colors.float },
   ['Number'] = { link = 'Constant' },
+  ['Operator'] = { fg = colors.red },
   ['Pmenu'] = { fg = grayscale.gray9 },
   ['PmenuSbar'] = { fg = ui.foreground },
   ['PmenuSel'] = { bg = grayscale.gray2, fg = ui.foreground },
@@ -339,7 +253,8 @@ local highlights = {
   ['TelescopePreviewBorder'] = { link = 'FloatBorder' },
 
   -- IndentBlankline
-  ['IndentBlanklineChar'] = { fg = grayscale.gray9 },
+  ['IblIndent'] = { fg = grayscale.gray3 },
+  ['IblScope'] = { fg = grayscale.gray6 },
 
   -- ZSH
   ['zshVariableDef'] = { link = 'Constant' },
@@ -358,10 +273,11 @@ local highlights = {
   ['rubySharpBang'] = { link = 'Comment' },
 
   -- NvimTree
-  ['NvimtreeNormal'] = { link = 'Directory' },
+  ['NvimTreeNormal'] = { bg = faded_colors.background },
+  ['NvimTreeWinSeparator'] = { bg = ui.background, fg = ui.background },
   ['NvimTreeFolderIcon'] = { link = 'Directory' },
   ['NvimTreeIndentMarker'] = { link = 'Directory' },
-  ['NvimTreeRootFolder'] = { link = 'Directory' },
+  ['NvimTreeRootFolder'] = { link = 'StatusFileModified' },
   ['NvimTreeGitDirty'] = { link = 'CocExplorerGitContentChange' },
   ['NvimTreeGitStaged'] = { link = 'CocExplorerGitPathChange' },
   ['NvimTreeGitRenamed'] = { link = 'CocExplorerGitContentChange' },
